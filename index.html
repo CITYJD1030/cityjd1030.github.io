@@ -1,126 +1,50 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>健安的個人首頁</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background: #333;
-      color: #fff;
-      padding: 1em 0;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      text-align: center;
-      padding: 3em 1em;
-      background: #fff;
-    }
-    .hero img {
-      width: 150px;
-      border-radius: 50%;
-      border: 5px solid #333;
-    }
-    .hero h1 {
-      margin-top: 0.5em;
-      font-size: 2em;
-    }
-    .section {
-      max-width: 800px;
-      margin: 2em auto;
-      padding: 1em;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .skills {
-      list-style: none;
-      padding: 0;
-    }
-    .skills li {
-      margin: 1em 0;
-    }
-    .skills .bar {
-      background: #ddd;
-      height: 20px;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    .skills .bar span {
-      display: block;
-      height: 100%;
-      background: #4caf50;
-      width: 0%;
-      animation: grow 1.2s forwards;
-    }
-    @keyframes grow {
-      from { width: 0; }
-      to { width: 90%; }
-    }
-    footer {
-      text-align: center;
-      padding: 1em;
-      background: #333;
-      color: #fff;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>健安的履歷網站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-offset="0" tabindex="0">
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar sticky-top">
+        <div class="position-sticky pt-3">
+          <ul class="nav flex-column nav-pills">
+            <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
 
-  <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-
-  <div class="hero">
-    <img src="https://i.imgur.com/sgX8ZbK.png" alt="你的大頭貼" />
-    <h1>你好，我是健安</h1>
-    <p>一名對 AI、網頁開發充滿熱情的學生。</p>
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <section id="about" class="pt-5">
+          <h2>About</h2>
+          <p>你好，我是健安，一名對 AI 和網頁開發充滿熱情的學生。</p>
+        </section>
+        <section id="experience" class="pt-5">
+          <h2>Experience</h2>
+          <p>實習經歷、研究專案等。</p>
+        </section>
+        <section id="skills" class="pt-5">
+          <h2>Skills</h2>
+          <ul>
+            <li>Python, PyTorch</li>
+            <li>HTML/CSS, JavaScript</li>
+            <li>Git, GitHub</li>
+          </ul>
+        </section>
+        <section id="contact" class="pt-5">
+          <h2>Contact</h2>
+          <p>Email: your.email@example.com</p>
+        </section>
+      </main>
+    </div>
   </div>
-
-  <div class="section">
-    <h2>技能 Skill</h2>
-    <ul class="skills">
-      <li>
-        Python
-        <div class="bar"><span style="width: 90%"></span></div>
-      </li>
-      <li>
-        HTML/CSS
-        <div class="bar"><span style="width: 85%"></span></div>
-      </li>
-      <li>
-        Git & GitHub
-        <div class="bar"><span style="width: 80%"></span></div>
-      </li>
-      <li>
-        深度學習 / PyTorch
-        <div class="bar"><span style="width: 70%"></span></div>
-      </li>
-    </ul>
-  </div>
-
-  <footer>
-    &copy; 2025 健安 仇 | cityjd1030.github.io
-  </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
