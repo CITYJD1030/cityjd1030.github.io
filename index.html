@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>健安的個人首頁</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1em 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 3em 1em;
+      background: #fff;
+    }
+    .hero img {
+      width: 150px;
+      border-radius: 50%;
+      border: 5px solid #333;
+    }
+    .hero h1 {
+      margin-top: 0.5em;
+      font-size: 2em;
+    }
+    .section {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1em;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .skills {
+      list-style: none;
+      padding: 0;
+    }
+    .skills li {
+      margin: 1em 0;
+    }
+    .skills .bar {
+      background: #ddd;
+      height: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .skills .bar span {
+      display: block;
+      height: 100%;
+      background: #4caf50;
+      width: 0%;
+      animation: grow 1.2s forwards;
+    }
+    @keyframes grow {
+      from { width: 0; }
+      to { width: 90%; }
+    }
+    footer {
+      text-align: center;
+      padding: 1em;
+      background: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <img src="https://i.imgur.com/sgX8ZbK.png" alt="你的大頭貼" />
+    <h1>你好，我是健安</h1>
+    <p>一名對 AI、網頁開發充滿熱情的學生。</p>
+  </div>
+
+  <div class="section">
+    <h2>技能 Skill</h2>
+    <ul class="skills">
+      <li>
+        Python
+        <div class="bar"><span style="width: 90%"></span></div>
+      </li>
+      <li>
+        HTML/CSS
+        <div class="bar"><span style="width: 85%"></span></div>
+      </li>
+      <li>
+        Git & GitHub
+        <div class="bar"><span style="width: 80%"></span></div>
+      </li>
+      <li>
+        深度學習 / PyTorch
+        <div class="bar"><span style="width: 70%"></span></div>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 健安 仇 | cityjd1030.github.io
+  </footer>
+
+</body>
+</html>
