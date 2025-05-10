@@ -10970,3 +10970,21 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+/* make the dropdown live inside the fixed sidebar */
+#sideNav .dropdown-menu {
+  position: static;    /* so it flows in the sidebar */
+  float: none;         /* cancel any floating behavior */
+  width: 100%;         /* full‐width of the sidebar */
+  background-color: var(--bs-primary); /* match your bg-primary */
+  border: none;        /* remove default border */
+  margin: 0;           /* collapse any built-in spacing */
+}
+
+/* style the items */
+#sideNav .dropdown-item {
+  color: #fff;           /* white text */
+  padding-left: 1.5rem;  /* indent under “Experience” */
+}
+#sideNav .dropdown-item:hover {
+  background-color: rgba(255,255,255,0.1);
+}
