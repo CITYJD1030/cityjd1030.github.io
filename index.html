@@ -1,174 +1,46 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="仇健安的個人履歷網站" />
-  <meta name="author" content="仇健安 Chien-An Chou" />
-  <title>仇健安 Chien-An Chou - Resume</title>
-
-  <!-- Font Awesome icons -->
-  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-
-  <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
-
-  <!-- Your local stylesheet -->
-  <link href="css/styles.css" rel="stylesheet" />
-</head>
-<body id="page-top">
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-  <a class="navbar-brand js-scroll-trigger" href="#page-top">
-    <span class="d-block d-lg-none">仇健安 Chien-An Chou</span>
-    <span class="d-none d-lg-block">
-      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/cityjd.jpg" alt="..." />
-    </span>
-  </a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarResponsive">
-    <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About / 關於我</a></li>
-      <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" 
-       href="#experience" 
-       id="experienceDropdown" 
-       role="button" 
-       data-bs-toggle="dropdown" 
-       aria-expanded="false">
-      Experience / 經歷
+<!-- Sidebar Navigation 完整修正展開推擠、內縮對齊效果 -->
+<ul class="navbar-nav w-100">
+  <li class="nav-item">
+    <a class="nav-link js-scroll-trigger" href="#about">ABOUT / 關於我</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#experienceCollapse" role="button" aria-expanded="false" aria-controls="experienceCollapse">
+      EXPERIENCE / 經歷 <span class="dropdown-toggle-icon">▾</span>
     </a>
-    <ul class="dropdown-menu bg-primary border-0" aria-labelledby="experienceDropdown">
-      <li><a class="dropdown-item text-white" href="#experience-campus">校內經歷</a></li>
-      <li><a class="dropdown-item text-white" href="#experience-offcampus">校外經歷</a></li>
-    </ul>
-</li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education / 學歷</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills / 技能</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests / 興趣</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards / 獎項</a></li>
-    </ul>
-  </div>
-</nav>
-<div class="container-fluid p-0">
-<!-- 使用者的 About ~ Awards 區塊內容保留，這裡代表插入點 -->
-<section class="resume-section" id="about">
-    <div class="resume-section-content">
-        <h1 class="mb-0">仇健安 <span class="text-primary">Chien-An Chou</span></h1>
-        <div class="subheading mb-5">國立陽明交通大學電機系 · cityjd1030@gmail.com</div>
-        <p class="lead mb-5">我是一位對 AI、深度學習與嵌入式系統有熱情的學生，喜歡動手實作與持續學習，也樂於參與研究、競賽與實驗室專案。
-        <br>I am a student passionate about AI, deep learning, and embedded systems. I enjoy hands-on implementation, continuous learning, and participating in research and competitions.</p>
-        <div class="social-icons">
-            <a class="social-icon" href="https://github.com/cityjd1030"><i class="fab fa-github"></i></a>
-            <a class="social-icon" href="mailto:cityjd1030@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
+    <div class="collapse ps-3" id="experienceCollapse">
+      <a class="nav-link js-scroll-trigger subitem" href="#experience-campus">校內經歷</a>
+      <a class="nav-link js-scroll-trigger subitem" href="#experience-offcampus">校外經歷</a>
     </div>
-</section>
-<hr class="m-0" />
+  </li>
+  <li class="nav-item">
+    <a class="nav-link js-scroll-trigger" href="#education">EDUCATION / 學歷</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link js-scroll-trigger" href="#skills">SKILLS / 技能</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link js-scroll-trigger" href="#interests">INTERESTS / 興趣</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link js-scroll-trigger" href="#awards">AWARDS / 獎項</a>
+  </li>
+</ul>
 
-<section class="resume-section" id="experience">
-  <div class="resume-section-content">
-    <h2 class="mb-5">經歷 / Experience</h2>
-
-    <h3 class="mb-3" id="experience-campus">校內經歷</h3>
-
-    <h4 class="mb-2">[必修]</h4>
-    <p class="ms-3 text-muted">（未填寫）</p>
-
-    <h4 class="mt-4 mb-2">[選修]</h4>
-    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-      <div class="flex-grow-1">
-        <h3 class="mb-0">AI 無線通訊系統實驗課</h3>
-        <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
-        <p>
-          以 Python 實作 Q-Learning 於資源分配問題，並結合實驗架構理解無線環境中的多 UE 行為。<br>
-          Implemented Q-learning-based resource allocation in Python to solve downlink scheduling across multiple UEs in a wireless setting.
-        </p>
-      </div>
-      <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
-    </div>
-
-    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-      <div class="flex-grow-1">
-        <h3 class="mb-0">Labs on Python for Deep Learning</h3>
-        <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
-        <p>使用Python實作多種深度學習模型與應用，並且實作各種分析，包括：</p>
-        <ul>
-          <li><span style="color:gray;">Challenge 0: (尚未提供)</span></li>
-          <li>
-            <a href="Labs_on_Python_for_Deep_Learning/Challenge1_report_仇健安.pdf" target="_blank">
-              Challenge 1: Activation Functions for Function Upscaling
-            </a>
-            <div class="ms-4 text-muted">比較不同 activation function（ReLU, GELU 等）在函數近似與外推的效能差異。</div>
-          </li>
-          <li>
-            <a href="Labs_on_Python_for_Deep_Learning/Challenge2_report_仇健安.pdf" target="_blank">
-              Challenge 2: Gradient Descent Variants
-            </a>
-            <div class="ms-4 text-muted">探索 Adam、Momentum、SGD 等學習演算法在不同 loss 曲面上的收斂速度。</div>
-          </li>
-          <li>
-            <a href="Labs_on_Python_for_Deep_Learning/Challenge3_report_仇健安.pdf" target="_blank">
-              Challenge 3: Padding Effects in CNN/RNN/GRU
-            </a>
-            <div class="ms-4 text-muted">比較不同 padding 策略（pre, post, centered）對 NLP 模型的 F1 / AUC 表現。</div>
-          </li>
-          <li>
-            <a href="Labs_on_Python_for_Deep_Learning/Challenge4_report_仇健安.pdf" target="_blank">
-              Challenge 4: Word Embedding with BERT
-            </a>
-            <div class="ms-4 text-muted">以 BERT 模型實作問答與分類任務，理解其 embedding 與 attention 機制。</div>
-          </li>
-          <li><span style="color:gray;">Challenge 5: (尚未提供)</span></li>
-        </ul>
-        <p>
-          在這門課中，我實作了一系列基於 PyTorch/Tensorflow/Python手刻 的深度學習挑戰任務。<br>
-          In this course, I conducted a series of hands-on deep learning challenges using PyTorch/Tensorflow/Python handmade.
-        </p>
-        <p>
-          我從分析各種 Activation Function（如 ReLU、GELU、Tanh）對神經網路進行函數放大（Upscaling）能力的影響開始。<br>
-          I began by analyzing how various activation functions (e.g., ReLU, GELU, Tanh) affect a neural network's ability to upscale mathematical functions.
-        </p>
-        <p>
-          接著我探討並比較了多種優化器（如 SGD、Momentum、Adam）在不同 Loss 曲面上的收斂行為與表現差異。<br>
-          Next, I explored and compared optimization methods such as SGD, Momentum, and Adam, observing their convergence behaviors and loss surface characteristics.
-        </p>
-        <p>
-          在自然語言處理任務中，我訓練了 CNN、RNN、GRU 等模型，並嘗試了不同的 Padding 策略（例如 pre-padding、post-padding、centered、noise-padding），<br>
-          對模型在 IMDB 情緒分類任務上的 F1 分數與 AUC 表現進行系統性評估。<br>
-          For NLP tasks, I trained CNN, RNN, and GRU models on the IMDB dataset with custom padding strategies (e.g., pre-padding, post-padding, centered, and noise-padding),
-          and performed extensive evaluation using F1 score and AUC across different sequence lengths.
-        </p>
-        <p>
-          我也使用 BERT 架構進行分類任務的微調（fine-tuning），並進一步分析其 Attention 機制與詞嵌入（word embedding）特性。<br>
-          I also worked with the BERT architecture, fine-tuning it on classification tasks and analyzing attention mechanisms to better understand its contextual embedding capabilities.
-        </p>
-      </div>
-      <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
-    </div>
-
-    <h4 class="mt-4 mb-2">[通識]</h4>
-    <p class="ms-3 text-muted">（未填寫）</p>
-
-    <h3 class="mt-5 mb-3" id="experience-offcampus">校外經歷</h3>
-    <p class="ms-3 text-muted">（未填寫）</p>
-
-  </div>
-</section>
-
-<hr class="m-0" />
-<section class="resume-section" id="education"><div class="resume-section-content"><h2 class="mb-5">學歷 / Education</h2><div class="d-flex flex-column flex-md-row justify-content-between mb-5"><div class="flex-grow-1"><h3 class="mb-0">國立陽明交通大學</h3><div class="subheading mb-3">電機工程學系</div><div>主修 AI 系統應用與嵌入式開發</div></div><div class="flex-shrink-0"><span class="text-primary">2021 - 預計 2025</span></div></div></div></section>
-<hr class="m-0" />
-<section class="resume-section" id="skills"><div class="resume-section-content"><h2 class="mb-5">技能 / Skills</h2><div class="subheading mb-3">程式語言與工具 / Programming Languages & Tools</div><ul class="list-inline dev-icons"><li class="list-inline-item"><i class="fab fa-python"></i></li><li class="list-inline-item"><i class="fab fa-cuttlefish"></i></li><li class="list-inline-item"><i class="fab fa-html5"></i></li><li class="list-inline-item"><i class="fab fa-css3-alt"></i></li><li class="list-inline-item"><i class="fab fa-git-alt"></i></li></ul><div class="subheading mb-3">開發經驗 / Development Experience</div><ul class="fa-ul mb-0"><li><span class="fa-li"><i class="fas fa-check"></i></span> PyTorch 深度學習模型訓練與應用</li><li><span class="fa-li"><i class="fas fa-check"></i></span> VLSI / Verilog / SystemVerilog 實驗與模擬</li><li><span class="fa-li"><i class="fas fa-check"></i></span> 8051 控制實作、顯示驅動、鍵盤掃描</li><li><span class="fa-li"><i class="fas fa-check"></i></span> Git / GitHub 專案管理與版本控制</li></ul></div></section>
-<hr class="m-0" />
-<section class="resume-section" id="interests"><div class="resume-section-content"><h2 class="mb-5">興趣 / Interests</h2><p>喜歡研究 AI 模型背後的原理與應用，同時對電腦硬體與機器結構也有濃厚興趣。</p><p class="mb-0">在課餘時間會學習前端架站技術、刷 LeetCode，也喜歡打羽球與看科技新聞。</p></div></section>
-<hr class="m-0" />
-<section class="resume-section" id="awards"><div class="resume-section-content"><h2 class="mb-5">獎項與證照 / Awards & Certifications</h2><ul class="fa-ul mb-0"><li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span> 2024 交大 AI 專題成果展入選</li><li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span> 2023 Verilog 專題競賽佳作</li><li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span> 2022 程式設計馬拉松校內第三名</li></ul></div></section>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/scripts.js"></script>
-</body>
-</html>
+<!-- 修正 collapse 下拉對齊與縮排樣式 -->
+<style>
+  #sideNav .nav-link.subitem {
+    font-size: 0.9rem;
+    padding-left: 1.25rem;
+    color: #ffffff;
+  }
+  #sideNav .nav-link.subitem:hover {
+    color: #ffc107;
+  }
+  .dropdown-toggle-icon {
+    font-size: 0.75rem;
+    transition: transform 0.3s;
+  }
+  [aria-expanded="true"] .dropdown-toggle-icon {
+    transform: rotate(180deg);
+  }
+</style>
