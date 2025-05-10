@@ -10988,3 +10988,12 @@ section.resume-section .resume-section-content {
 #sideNav .dropdown-item:hover {
   background-color: rgba(255,255,255,0.1);
 }
+
+.dropdown-menu {
+  padding-left: 0; /* 拿掉預設縮排 */
+}
+
+.dropdown-menu .dropdown-item {
+  padding-left: 1.25rem; /* 或設為 0rem 若你想要完全對齊主項目 */
+  font-size: 1rem; /* 讓字體和主項目一致 */
+}
