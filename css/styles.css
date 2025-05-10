@@ -10989,11 +10989,13 @@ section.resume-section .resume-section-content {
   background-color: rgba(255,255,255,0.1);
 }
 
+/* 修正 Experience 子選單對齊與字體 */
 .dropdown-menu {
-  padding-left: 0; /* 拿掉預設縮排 */
+  padding-left: 0; /* 拿掉預設的整體左縮排 */
 }
 
 .dropdown-menu .dropdown-item {
-  padding-left: 1.25rem; /* 或設為 0rem 若你想要完全對齊主項目 */
-  font-size: 1rem; /* 讓字體和主項目一致 */
+  padding-left: 1rem;   /* 控制子選單內的左縮排（視覺上與主選單對齊） */
+  font-size: 1rem;       /* 和主選單一樣大小 */
+  color: #ffffff;        /* 強制文字為白色，避免在某些瀏覽器變成黑色 */
 }
