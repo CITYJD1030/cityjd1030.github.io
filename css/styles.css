@@ -10970,32 +10970,3 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
-/* make the dropdown live inside the fixed sidebar */
-#sideNav .dropdown-menu {
-  position: static;    /* so it flows in the sidebar */
-  float: none;         /* cancel any floating behavior */
-  width: 100%;         /* full‐width of the sidebar */
-  background-color: var(--bs-primary); /* match your bg-primary */
-  border: none;        /* remove default border */
-  margin: 0;           /* collapse any built-in spacing */
-}
-
-/* style the items */
-#sideNav .dropdown-item {
-  color: #fff;           /* white text */
-  padding-left: 1.5rem;  /* indent under “Experience” */
-}
-#sideNav .dropdown-item:hover {
-  background-color: rgba(255,255,255,0.1);
-}
-
-/* 修正 Experience 子選單對齊與字體 */
-.dropdown-menu {
-  padding-left: 0; /* 拿掉預設的整體左縮排 */
-}
-
-.dropdown-menu .dropdown-item {
-  padding-left: 1rem;   /* 控制子選單內的左縮排（視覺上與主選單對齊） */
-  font-size: 1rem;       /* 和主選單一樣大小 */
-  color: #ffffff;        /* 強制文字為白色，避免在某些瀏覽器變成黑色 */
-}
