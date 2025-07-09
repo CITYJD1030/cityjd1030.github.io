@@ -84,10 +84,16 @@
     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
       <div class="flex-grow-1">
         <h3 class="mb-0">AI 無線通訊系統實驗課</h3>
+        <h3 class="mb-0">AI Lab for Wireless Communication</h3>
         <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
+        <ul class="list-unstyled ms-3">
+          <li><strong>Dept. of course offering:</strong> Department of Electrical and Computer Engineering</li>
+          <li><strong>Required/Elective:</strong> Elective</li>
+          <li><strong>Instructor:</strong> 黃昱智、方凱田、伍紹勳</li>
+        </ul>
         <p>
-          以 Python 實作 Q-Learning 於資源分配問題，並結合實驗架構理解無線環境中的多 UE 行為。<br>
-          Implemented Q-learning-based resource allocation in Python to solve downlink scheduling across multiple UEs in a wireless setting.
+          本課程透過實作方式介紹無線通訊技術與人工智慧演算法，涵蓋通道解碼、資源分配與雷達感測等主題，並強調 AI 在無線通訊中的實務應用。<br>
+          This course introduces wireless communication technologies and AI algorithms through hands-on projects, focusing on practical applications such as channel decoding, resource allocation, and radar sensing.
         </p>
       </div>
       <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
@@ -103,78 +109,78 @@
           <li><strong>Required/Elective:</strong> Elective</li>
           <li><strong>Instructor:</strong> 李冕</li>
         </ul>
-        <p>使用Python實作多種深度學習模型與應用，並且實作各種分析，包括：</p>
-        <ul>
-          <!--<li><span style="color:gray;">Challenge 0: (尚未提供)</span></li>-->
-          <li>
-            <a href="Labs_on_Python_for_Deep_Learning/Challenge1_report_仇健安.pdf" target="_blank">
-              Challenge 1: Activation Functions for Function Upscaling
-            </a>
-            <div class="ms-4 text-muted">比較不同 activation function（ReLU, GELU 等）在函數近似與外推的效能差異。</div>
-            <div class="ms-4 text-muted">Compare the performance differences of different activation functions (ReLU, GELU, etc.) in function approximation and extrapolation.</div>
-          </li>
-          <li>
-            <a href="Labs_on_Python_for_Deep_Learning/Challenge2_report_仇健安.pdf" target="_blank">
-              Challenge 2: Gradient Descent Variants
-            </a>
-            <div class="ms-4 text-muted">探索 Adam、Momentum、SGD 等學習演算法在不同 loss 曲面上的收斂速度。</div>
-            <div class="ms-4 text-muted">Explore the convergence speed of learning algorithms such as Adam, Momentum, SGD on different loss surfaces.</div>
-          </li>
-          <li>
-            <a href="Labs_on_Python_for_Deep_Learning/Challenge3_report_仇健安.pdf" target="_blank">
-              Challenge 3: Padding Effects in CNN/RNN/GRU
-            </a>
-            <div class="ms-4 text-muted">比較不同 padding 策略（pre, post, centered...）對 NLP 模型的 F1 / AUC 表現。</div>
-            <div class="ms-4 text-muted">Compare the F1 / AUC performance of different padding strategies (pre, post, centered...) on NLP models.</div>
-          </li>
-          <li>
-            <a href="Labs_on_Python_for_Deep_Learning/Challenge4_report_仇健安.pdf" target="_blank">
-              Challenge 4: Word Embedding with BERT
-            </a>
-            <div class="ms-4 text-muted">以 BERT 模型實作問答與分類任務，理解其 embedding 與 attention 機制。</div>
-            <div class="ms-4 text-muted">Implement question answering and classification tasks using the BERT model to understand its embedding and attention mechanisms.</div>
-          </li>
-          <li>
-            <a href="Labs_on_Python_for_Deep_Learning/Challenge5_report_仇健安.pdf" target="_blank">
-              Challenge 5:  Dissecting Attention Mechanisms and Training Transformers
-            </a>
-            <div class="ms-4 text-muted">本挑戰深入探索 Transformer 模型的注意力機制，透過自行實作 Encoder-Decoder 架構並訓練於英文-德文雙語資料集上，強化模型對上下文的理解能力，完成英德翻譯模型。注意力機制是提升自然語言處理表現的關鍵技術，能動態聚焦輸入訊息以生成語意相關的輸出。</div>
-            <div class="ms-4 text-muted">This project explores the core attention mechanism in Transformer models by implementing and training a custom encoder-decoder architecture on an English-German bilingual dataset to complete a translation model. Attention plays a vital role in NLP by enabling context-aware representations that significantly boost model performance.</div>
-          </li>
-          <li>
-            <a href="Labs_on_Python_for_Deep_Learning/Challenge6_report_仇健安.pdf" target="_blank">
-              Challenge 6:  Embedding Edit Distance with Variational Autoencoders
-            </a>
-            <div class="ms-4 text-muted">本實驗利用變分自編碼器將二進位序列轉為潛在向量，使其距離能反映編輯距離，並透過客製化損失平衡重建與結構對齊能力。</div>
-            <div class="ms-4 text-muted">We use a Variational Autoencoder to embed binary sequences so that latent distances reflect edit distances. Custom losses guide the model to balance reconstruction and structural alignment.</div>
-          </li>
-          <!--<li><span style="color:gray;">Final Project: (尚未提供)</span></li>-->
-        </ul>
-        <p>
-          在這門課中，我實作了一系列基於 PyTorch/Tensorflow/Python手刻 的深度學習挑戰任務。<br>
-          In this course, I conducted a series of hands-on deep learning challenges using PyTorch/Tensorflow/Python handmade.
-        </p>
-        <p>
-          我從分析各種 Activation Function（如 ReLU、GELU、Tanh）對神經網路進行函數放大（Upscaling）能力的影響開始。<br>
-          I began by analyzing how various activation functions (e.g., ReLU, GELU, Tanh) affect a neural network's ability to upscale mathematical functions.
-        </p>
-        <p>
-          接著我探討並比較了多種優化器（如 SGD、Momentum、Adam）在不同 Loss 曲面上的收斂行為與表現差異。<br>
-          Next, I explored and compared optimization methods such as SGD, Momentum, and Adam, observing their convergence behaviors and loss surface characteristics.
-        </p>
-        <p>
-          在自然語言處理任務中，我訓練了 CNN、RNN、GRU 等模型，並嘗試了不同的 Padding 策略（例如 pre-padding、post-padding、centered、noise-padding），<br>
-          對模型在 IMDB 情緒分類任務上的 F1 分數與 AUC 表現進行系統性評估。<br>
-          For NLP tasks, I trained CNN, RNN, and GRU models on the IMDB dataset with custom padding strategies (e.g., pre-padding, post-padding, centered, and noise-padding),
-          and performed extensive evaluation using F1 score and AUC across different sequence lengths.
-        </p>
-        <p>
-          我也使用 BERT 架構進行分類任務的微調（fine-tuning），並進一步分析其 Attention 機制與詞嵌入（word embedding）特性。<br>
-          I also worked with the BERT architecture, fine-tuning it on classification tasks and analyzing attention mechanisms to better understand its contextual embedding capabilities.
-        </p>
+        <!-- 簡短介紹（會一直顯示） -->
+        <p>使用Python完成多種深度學習模型應用，並透過各種實作、分析與比較，了解各種有關深度學習的相關知識。以下為課程的Challenge與我的成果：</p>
+        <p>Use Python to complete various deep learning model applications, and learn various deep learning related knowledge through various practices, analysis and comparisons. The following are the challenges of the course and my achievements:</p>
+
+        <!-- 按我了解更多按鈕 -->
+        <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
+          data-bs-toggle="collapse" data-bs-target="#dlCourseDetails" aria-expanded="false"
+          aria-controls="dlCourseDetails" id="showMoreBtn">
+          按我了解更多
+        </button>
+    
+        <!-- 詳細介紹區塊（collapse） -->
+        <div class="collapse" id="dlCourseDetails">
+          <ul>
+            <li>
+              <a href="Labs_on_Python_for_Deep_Learning/Challenge1_report_仇健安.pdf" target="_blank">
+                Challenge 1: Activation Functions for Function Upscaling
+              </a>
+              <div class="ms-4 text-muted">比較不同 activation function（ReLU, GELU 等）在函數近似與外推的效能差異。</div>
+              <div class="ms-4 text-muted">Compare the performance differences of different activation functions (ReLU, GELU, etc.) in function approximation and extrapolation.</div>
+            </li>
+            <li>
+              <a href="Labs_on_Python_for_Deep_Learning/Challenge2_report_仇健安.pdf" target="_blank">
+                Challenge 2: Gradient Descent Variants
+              </a>
+              <div class="ms-4 text-muted">探索 Adam、Momentum、SGD 等學習演算法在不同 loss 曲面上的收斂速度。</div>
+              <div class="ms-4 text-muted">Explore the convergence speed of learning algorithms such as Adam, Momentum, SGD on different loss surfaces.</div>
+            </li>
+            <li>
+              <a href="Labs_on_Python_for_Deep_Learning/Challenge3_report_仇健安.pdf" target="_blank">
+                Challenge 3: Padding Effects in CNN/RNN/GRU
+              </a>
+              <div class="ms-4 text-muted">比較不同 padding 策略對 NLP 模型的 F1 / AUC 表現。</div>
+              <div class="ms-4 text-muted">Compare the F1 / AUC performance of different padding strategies on NLP models.</div>
+            </li>
+            <li>
+              <a href="Labs_on_Python_for_Deep_Learning/Challenge4_report_仇健安.pdf" target="_blank">
+                Challenge 4: Word Embedding with BERT
+              </a>
+              <div class="ms-4 text-muted">以 BERT 模型實作問答與分類任務，理解其 embedding 與 attention 機制。</div>
+              <div class="ms-4 text-muted">Implement question answering and classification tasks using the BERT model to understand its embedding and attention mechanisms.</div>
+            </li>
+            <li>
+              <a href="Labs_on_Python_for_Deep_Learning/Challenge5_report_仇健安.pdf" target="_blank">
+                Challenge 5: Dissecting Attention Mechanisms and Training Transformers
+              </a>
+              <div class="ms-4 text-muted">本挑戰深入探索 Transformer 的注意力機制並實作英德翻譯模型。</div>
+              <div class="ms-4 text-muted">This project explores attention in Transformers and builds a translation model.</div>
+            </li>
+            <li>
+              <a href="Labs_on_Python_for_Deep_Learning/Challenge6_report_仇健安.pdf" target="_blank">
+                Challenge 6: Embedding Edit Distance with Variational Autoencoders
+              </a>
+              <div class="ms-4 text-muted">使用 VAE 建構潛在空間以反映二進位序列的編輯距離。</div>
+              <div class="ms-4 text-muted">Use VAE to embed binary sequences, making latent distances reflect edit distances.</div>
+            </li>
+          </ul>
+          <p>在這門課中，我實作了一系列基於 PyTorch/Tensorflow 的深度學習挑戰任務。</p>
+    
+          <!-- 收起按鈕（放在最下方） -->
+          <div class="mt-4">
+            <button class="btn btn-outline-secondary btn-sm" type="button"
+              data-bs-toggle="collapse" data-bs-target="#dlCourseDetails" aria-expanded="true"
+              aria-controls="dlCourseDetails">
+              收起內容
+            </button>
+          </div>
+        </div>
       </div>
       <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
     </div>
+
 
     <h4 class="mt-4 mb-2">[通識]</h4>
     <p class="ms-3 text-muted">（未填寫）</p>
