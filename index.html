@@ -322,13 +322,13 @@
         <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
         <ul class="list-unstyled ms-3">
           <li><strong>Dept. of course offering:</strong> Department of Electrical and Computer Engineering</li>
-          <li><strong>Required/Elective:</strong> Required</li>
+          <li><strong>Required/Elective:</strong> Elective</li>
           <li><strong>Instructor:</strong> 王宜楷</li>
         </ul>
     
         <!-- 簡短介紹 -->
         <p>
-          本課程介紹 8051 微控制器架構與應用，涵蓋組合語言、I/O 操作、中斷、計時器、串列通訊等主題，透過理論與實驗課程並重，培養學生設計與除錯微控制系統的實作能力。<br>
+          本課程介紹 8051 微控制器架構與應用，涵蓋組合語言、I/O 操作、中斷、計時器、串列通訊等主題，透過理論與實驗課程並重，培養設計與除錯微控制系統的實作能力。<br>
           This course introduces the architecture and applications of the 8051 microcontroller, covering assembly language, I/O operations, interrupts, timers, and serial communication. Through combined lectures and hands-on labs, students gain practical skills in designing and debugging microcontroller systems.
         </p>
     
@@ -357,19 +357,136 @@
             This lab-based course covers both theoretical concepts and practical implementation of microcontroller systems, enabling students to develop low-level programs in assembly and C, interface with hardware, and analyze timing and interrupt behavior in real time.
           </p>
     
-          <!-- 📂 資料區（預留） -->
           <h5 class="mt-4">📂 課程資料與成果</h5>
           <ul>
-            <!-- 後續可加入下列範例項目 -->
-            <!--
             <li>
-              <a href="Microcomputer_Lab/Lab1_Timer0_Buzzer.pdf" target="_blank">
-                Lab 1 - 使用 Timer0 控制蜂鳴器頻率
+              <a href="Principle_of_Microcomputer/Lab1結報.pdf" target="_blank">
+                Lab 1 - Timer/Counter 與蜂鳴器頻率控制
               </a>
-              <div class="ms-3 text-muted">使用 8051 Timer0 以 C 語言與中斷方式控制音頻輸出。</div>
+              <div class="ms-3 text-muted">
+                使用 Timer0 控制 P0.0 輸出頻率以產生聲音，實驗中觀察計時器對頻率的控制效果。<br>
+                Use Timer0 to generate tones on P0.0 and analyze how timer settings affect output frequency.
+              </div>
             </li>
-            -->
+            <li>
+              <a href="Principle_of_Microcomputer/Lab2報告.pdf" target="_blank">
+                Lab 2 - 基礎 I/O 控制
+              </a>
+              <div class="ms-3 text-muted">
+                使用按鈕控制 LED 燈，學習 I/O port 的讀寫與基本反應設計。<br>
+                Control LEDs with buttons to understand basic I/O read/write operations.
+              </div>
+            </li>
+            <li>
+              <a href="Principle_of_Microcomputer/Lab3報告.pdf" target="_blank">
+                Lab 3 - 顯示數位訊號
+              </a>
+              <div class="ms-3 text-muted">
+                實作顯示器輸出功能，學習如何在七段顯示器上顯示數字訊號。<br>
+                Implement digital output display using 7-segment displays.
+              </div>
+            </li>
+            <li>
+              <a href="Principle_of_Microcomputer/Lab4報告.pdf" target="_blank">
+                Lab 4 - 外部中斷應用
+              </a>
+              <div class="ms-3 text-muted">
+                利用外部中斷觸發 LED 閃爍，學習 interrupt 的使用方式與 ISR 設計。<br>
+                Trigger LED blinking using external interrupts and design corresponding ISR logic.
+              </div>
+            </li>
+            <li>
+              <a href="Principle_of_Microcomputer/Lab5報告.pdf" target="_blank">
+                Lab 5 - 中斷結合計時功能
+              </a>
+              <div class="ms-3 text-muted">
+                結合 Timer 與外部中斷實現多功能同步輸出。<br>
+                Combine timers and interrupts to implement synchronized output control.
+              </div>
+            </li>
+            <li>
+              <a href="Principle_of_Microcomputer/Lab6報告.pdf" target="_blank">
+                Lab 6 - 串列通訊 (UART)
+              </a>
+              <div class="ms-3 text-muted">
+                建立串列資料傳輸系統，透過電腦終端傳送控制指令給 8051。<br>
+                Implement serial communication (UART) between PC and 8051 to transmit control commands.
+              </div>
+            </li>
+            <li>
+              <a href="Principle_of_Microcomputer/Lab7報告.pdf" target="_blank">
+                Lab 7 - 串列資料轉換與顯示
+              </a>
+              <div class="ms-3 text-muted">
+                接收 UART 資料並轉換為對應聲音輸出，實作簡易語音提示系統。<br>
+                Convert UART input into tone output to build a simple audio response system.
+              </div>
+            </li>
+            <li>
+              <a href="Principle_of_Microcomputer/Lab8報告.pdf" target="_blank">
+                Lab 8 - 矩陣鍵盤輸入辨識
+              </a>
+              <div class="ms-3 text-muted">
+                掃描矩陣式鍵盤輸入，並將輸入數字以聲音或燈號回饋顯示。<br>
+                Scan matrix keypad inputs and output feedback through sound or LED.
+              </div>
+            </li>
+            <li>
+              <a href="Principle_of_Microcomputer/Lab9-1報告.pdf" target="_blank">
+                Lab 9-1 - 動態顯示與捲動特效
+              </a>
+              <div class="ms-3 text-muted">
+                使用外部中斷製作動態 LED 顯示，包括跑馬燈與捲動字串效果。<br>
+                Create animated LED scrolling effects with external interrupt triggering.
+              </div>
+            </li>
+            <li>
+              <a href="Principle_of_Microcomputer/Lab9-2報告.pdf" target="_blank">
+                Lab 9-2 - 捲動字與漸暗顯示實作
+              </a>
+              <div class="ms-3 text-muted">
+                實作帶漸暗效果的動態捲動字元顯示，使用定時器與自定義字元表控制。<br>
+                Implement LED message scrolling with fading effects using timers and dynamic lookup tables.
+              </div>
+            </li>
+            <li>
+              <a href="Principle_of_Microcomputer/Lab10報告.pdf" target="_blank">
+                Lab 10 - 音樂播放系統設計
+              </a>
+              <div class="ms-3 text-muted">
+                利用 Timer0 播放音階與簡易樂曲，透過鍵盤輸入選擇播放內容。<br>
+                Use Timer0 to generate musical tones and enable song selection via keypad input.
+              </div>
+            </li>
+            <li>
+              <a href="Principle_of_Microcomputer/Lab11報告.pdf" target="_blank">
+                Lab 11 - 音樂與動畫綜合實作
+              </a>
+              <div class="ms-3 text-muted">
+                整合聲音與動畫輸出，在顯示器上同步呈現動態畫面與播放旋律。<br>
+                Integrate sound and animation to display synchronized visuals and melodies.
+              </div>
+            </li>
+            <li>
+              <a href="Principle_of_Microcomputer/Lab12結報.pdf" target="_blank">
+                Lab 12 - 超音波測距模組應用
+              </a>
+              <div class="ms-3 text-muted">
+                實作使用超音波模組進行距離測量，並將測距結果顯示於七段顯示器。<br>
+                Implement distance measurement using ultrasonic sensors and display results on 7-segment display.
+              </div>
+            </li>
+            <li>
+              <a href="Principle_of_Microcomputer/Final報告.pdf" target="_blank">
+                Final Project - 綜合應用專題
+              </a>
+              <div class="ms-3 text-muted">
+                結合中斷、計時器、顯示器與聲音輸出，實作具互動功能之 8051 控制系統。<br>
+                Designed a complete 8051 interactive system combining interrupts, timers, visual output, and audio control.
+              </div>
+            </li>
           </ul>
+
     
           <!-- 收起按鈕 -->
           <div class="mt-4">
