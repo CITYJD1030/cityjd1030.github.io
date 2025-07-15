@@ -17,7 +17,7 @@
   <!-- Your local stylesheet -->
   <link href="css/styles.css" rel="stylesheet" />
   <link href="css/custom.css" rel="stylesheet" />
-  
+
 </head>
 <body id="page-top">
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -46,10 +46,6 @@
     <ul class="dropdown-menu bg-primary border-0" aria-labelledby="experienceDropdown">
       <li><a class="dropdown-item text-white text-center w-100" href="#experience-campus">校內經歷</a></li>
       <li><a class="dropdown-item text-white text-center w-100" href="#experience-offcampus">校外經歷</a></li>
-      <li><hr class="dropdown-divider bg-light"></li>
-      <li><a class="dropdown-item text-white text-center w-100" href="#required-courses">必修課程</a></li>
-      <li><a class="dropdown-item text-white text-center w-100" href="#elective-courses">選修課程</a></li>
-      <li><a class="dropdown-item text-white text-center w-100" href="#general-courses">通識課程</a></li>
     </ul>
 </li>
       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education / 學歷</a></li>
@@ -81,7 +77,8 @@
 
     <h3 class="mb-3" id="experience-campus">校內經歷</h3>
 
-    <h4 class="mb-2" id="required-courses">[必修]</h4>
+    <h4 class="mb-2">[必修]</h4>
+    <p class="ms-3 text-muted">（未填寫）</p>
     <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
       <div class="flex-grow-1">
         <h3 class="mb-0">訊號與系統</h3>
@@ -141,7 +138,7 @@
       <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
     </div>
 
-    <h4 class="mt-4 mb-2" id="elective-courses">[選修]</h4>
+    <h4 class="mt-4 mb-2">[選修]</h4>
     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
       <div class="flex-grow-1">
         <h3 class="mb-0">AI 無線通訊系統實驗課</h3>
@@ -152,42 +149,42 @@
           <li><strong>Required/Elective:</strong> Elective</li>
           <li><strong>Instructor:</strong> 黃昱智、方凱田、伍紹勳</li>
         </ul>
-    
+
         <!-- 課程簡短介紹 -->
         <p>
           本課程透過實作方式介紹無線通訊技術與人工智慧演算法，涵蓋通道解碼、資源分配與雷達感測等主題，並強調 AI 在無線通訊中的實務應用。<br>
           This course introduces wireless communication technologies and AI algorithms through hands-on projects, focusing on practical applications such as channel decoding, resource allocation, and radar sensing.
         </p>
-    
+
         <!-- 按鈕：按我了解更多 -->
         <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
           data-bs-toggle="collapse" data-bs-target="#aiLabWirelessCollapse" aria-expanded="false"
           aria-controls="aiLabWirelessCollapse">
           按我了解更多
         </button>
-    
+
         <!-- 展開內容區塊 -->
         <div class="collapse" id="aiLabWirelessCollapse">
           <p>
             在本課程中，我透過 Python 實作多種 AI 演算法在無線通訊場景中的應用，內容包含通道解碼、熱點定位、網路資源分配與雷達感測等。<br>
             In this course, I implemented various AI algorithms in Python to address real-world wireless communication problems such as channel decoding, hotspot localization, resource allocation, and radar sensing.
           </p>
-    
+
           <p>
             課程前段聚焦於通道解碼技術，從傳統演算法延伸至以 SVM 和深度學習為基礎的分類方法，並完成相關專題實作。<br>
             The early part of the course focused on channel decoding, moving from traditional decoding algorithms to classification-based methods using SVMs and deep learning, culminating in a dedicated project.
           </p>
-    
+
           <p>
             中段課程介紹 Q-Learning 與 DQN，並實作於多 UE 的網路資源分配問題中，藉此了解 AI 強化學習在動態系統中的應用潛力。<br>
             The middle section explored Q-Learning and DQN for multi-user downlink resource allocation, highlighting reinforcement learning's adaptability in dynamic environments.
           </p>
-    
+
           <p>
             後段課程延伸至雷達感測與生成模型，如 GAN、VAE、LSTM 與 CNN 在訊號解調、角度估計與室內定位的應用，並以多項專題作為整合驗證。<br>
             The later part extended into radar sensing and generative modeling, where GANs, VAEs, LSTMs, and CNNs were used for signal demodulation, angle of arrival estimation, and indoor localization, culminating in several final projects.
           </p>
-    
+
           <h5 class="mt-4">📂 課程資料與成果</h5>
           <ul>
             <li>
@@ -255,7 +252,7 @@
             </li>
           </ul>
 
-    
+
           <!-- 收起按鈕 -->
           <div class="mt-4">
             <button class="btn btn-outline-secondary btn-sm" type="button"
@@ -290,7 +287,7 @@
           aria-controls="dlCourseDetails" id="showMoreBtn">
           按我了解更多
         </button>
-    
+
         <!-- 詳細介紹區塊（collapse） -->
         <div class="collapse" id="dlCourseDetails">
           <ul>
@@ -341,28 +338,28 @@
             在這門課中，我透過 Python 與 PyTorch 實作多種統計學與深度學習模型，內容涵蓋從基礎函數擬合到生成模型、強化學習等主題，並搭配期末專題進行整合應用。<br>
             In this course, I implemented a wide range of statistical and deep learning models using Python and PyTorch, covering topics from function fitting and unsupervised learning to generative models and reinforcement learning, and concluded with a final project.
           </p>
-          
+
           <p>
             課程前半介紹了平滑器（Smoothers）、樣條函數（Splines）與廣義加性模型（GAMs），並延伸至無監督式學習（如群集分析）與貝氏統計與階層式模型。<br>
             The first part of the course focused on smoothers, splines, and generalized additive models (GAMs), and extended to unsupervised learning such as clustering, as well as Bayesian statistics and hierarchical modeling.
           </p>
-          
+
           <p>
             深度學習部分，我學習了卷積神經網路（CNN）、回傳誤差（Backpropagation）、視野與特徵圖可視化（Feature Map Visualization）、注意力熱點（Saliency Maps）與遷移學習等核心概念。<br>
             In the deep learning section, I explored convolutional neural networks (CNNs), backpropagation, receptive fields, feature map visualization, saliency maps, and transfer learning techniques.
           </p>
-          
+
           <p>
             在處理序列資料的章節中，我實作了 RNN、GRU、LSTM 以進行語言建模任務，並比較其在不同語言嵌入技術（如 Word2Vec）下的表現。<br>
             For sequential data tasks, I implemented RNNs, GRUs, and LSTMs for language modeling, and evaluated their performance using various word embedding techniques like Word2Vec.
           </p>
-          
+
           <p>
             我也學習了 Transformer、Autoencoder、變分自編碼器（VAE），並進一步深入生成對抗網路（GANs）與深度強化學習（Deep RL）在資料生成與決策中的應用。<br>
             I also worked with Transformer models, autoencoders, and variational autoencoders (VAEs), and further explored generative adversarial networks (GANs) and deep reinforcement learning for data generation and decision-making tasks.
           </p>
 
-    
+
           <!-- 收起按鈕（放在最下方） -->
           <div class="mt-4">
             <button class="btn btn-outline-secondary btn-sm" type="button"
@@ -386,23 +383,24 @@
           <li><strong>Required/Elective:</strong> Elective</li>
           <li><strong>Instructor:</strong> 王宜楷</li>
         </ul>
-    
+
         <!-- 簡短介紹 -->
         <p>
           本課程介紹 8051 微控制器架構與應用，涵蓋組合語言、I/O 操作、中斷、計時器、串列通訊等主題，透過理論與實驗課程並重，培養設計與除錯微控制系統的實作能力。<br>
           This course introduces the architecture and applications of the 8051 microcontroller, covering assembly language, I/O operations, interrupts, timers, and serial communication. Through combined lectures and hands-on labs, students gain practical skills in designing and debugging microcontroller systems.
         </p>
-    
+
         <!-- 展開按鈕 -->
         <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
           data-bs-toggle="collapse" data-bs-target="#microcomputerDetails" aria-expanded="false"
           aria-controls="microcomputerDetails">
           按我了解更多
         </button>
-    
+
         <!-- 展開內容 -->
         <div class="collapse" id="microcomputerDetails">
           <p>
+            本課程每週包含 2 小時講授與 2 小時實驗，內容涵蓋：
             本課程兼具理論講授與實驗實作，內容涵蓋：
           </p>
           <ul>
@@ -417,30 +415,30 @@
           <p>
             This lab-based course covers both theoretical concepts and practical implementation of microcontroller systems, enabling students to develop low-level programs in assembly and C, interface with hardware, and analyze timing and interrupt behavior in real time.
           </p>
-    
+
           <h5 class="mt-4">📂 課程資料與成果</h5>
           <ul>
-          
+
             <li>
               <a href="Principle_of_Microcomputer/Lab1結報.pdf" target="_blank">Lab 1 - LED 跑馬燈與霹靂燈效果</a>
               <div class="ms-3 text-muted">使用 8051 組合語言撰寫 LED 跑馬燈與霹靂燈程式，學習基本 I/O 控制與延遲函數。<br>Implemented LED chasing and blinking effects using 8051 assembly to learn basic I/O control and delay routines.</div>
             </li>
-          
+
             <li>
               <a href="Principle_of_Microcomputer/Lab2報告.pdf" target="_blank">Lab 2 - 使用指撥開關控制 LED 與跑馬燈</a>
               <div class="ms-3 text-muted">透過指撥開關輸入控制 LED 顯示與跑馬燈效果，加強 I/O 控制與 delay 時間調整概念。<br>Used DIP switches to control LED outputs and implement a running light pattern, reinforcing I/O and delay control concepts.</div>
             </li>
-          
+
             <li>
               <a href="Principle_of_Microcomputer/Lab3報告.pdf" target="_blank">Lab 3 - 七段顯示器顯示數字與字母</a>
               <div class="ms-3 text-muted">練習共陽極七段顯示器的控制，顯示 0~9 及 A~F 字元，並使用 TABLE 儲存顯示資料。<br>Practiced controlling common-anode 7-segment displays to show digits and letters using lookup TABLE.</div>
             </li>
-          
+
             <li>
               <a href="Principle_of_Microcomputer/Lab4報告.pdf" target="_blank">Lab 4 - 四合一七段顯示器計數器設計</a>
               <div class="ms-3 text-muted">實作四合一共陽極七段顯示器的倒數計時器，學習多位元輪流顯示與亮度一致的技巧。<br>Designed a countdown timer using 4-digit 7-segment display and learned multiplexing techniques for uniform brightness.</div>
             </li>
-          
+
             <li>
               <a href="Principle_of_Microcomputer/Lab5報告.pdf" target="_blank">Lab 5 - 5x7 點矩陣 LED 動畫與字型切換</a>
               <div class="ms-3 text-muted">
@@ -448,7 +446,7 @@
                 Controlled a 5x7 dot matrix LED to animate Chinese characters like "大", "中", and "小" through scanning and timed switching. Explored circuit-level control using 74LS244 and ULN2004.
               </div>
             </li>
-            
+
             <li>
               <a href="Principle_of_Microcomputer/Lab6報告.pdf" target="_blank">Lab 6 - 矩陣鍵盤輸入與七段顯示器結合</a>
               <div class="ms-3 text-muted">
@@ -456,7 +454,7 @@
                 Implemented matrix keypad scanning and showed the key result on a 7-segment display. Practiced debounce handling and row-column input logic.
               </div>
             </li>
-            
+
             <li>
               <a href="Principle_of_Microcomputer/Lab7報告.pdf" target="_blank">Lab 7 - 步進馬達控制與小鍵盤輸入</a>
               <div class="ms-3 text-muted">
@@ -464,7 +462,7 @@
                 Controlled a stepper motor with keyboard input to switch between excitation modes (1-phase, 2-phase, 1-2-phase), analyzing torque and stability across methods.
               </div>
             </li>
-          
+
             <li>
               <a href="Principle_of_Microcomputer/Lab8報告.pdf" target="_blank">Lab 8 - LCD 顯示與自訂動畫圖形</a>
               <div class="ms-3 text-muted">
@@ -472,12 +470,12 @@
                 Controlled a character-based LCD module for static display and created animated figures using CGRAM custom characters.
               </div>
             </li>
-          
+
             <li>
               <a href="Principle_of_Microcomputer/Lab9-1報告.pdf" target="_blank">Lab 9-1 - 使用 TABLE 控制旋轉 LED 顯示中文字</a>
               <div class="ms-3 text-muted">以資料表控制旋轉 LED 點陣顯示「別當我」中文字，並解決 DPTR 無法存取大於 256 bytes 資料的問題。<br>Controlled spinning LED display to show Chinese characters using table lookup, addressing DPTR limitations on large tables.</div>
             </li>
-          
+
             <li>
               <a href="Principle_of_Microcomputer/Lab9-2報告.pdf" target="_blank">Lab 9-2 - 外部中斷與旋轉 LED 顯示控制</a>
               <div class="ms-3 text-muted">
@@ -485,7 +483,7 @@
                 Used INT0 interrupt to synchronize and trigger character display on a rotating LED system, enabling animated scrolling of Chinese characters.
               </div>
             </li>
-            
+
             <li>
               <a href="Principle_of_Microcomputer/Lab10報告.pdf" target="_blank">
                 Lab 10 – 超音波測距系統設計
@@ -493,7 +491,7 @@
               <div class="ms-3 text-muted">整合 Timer0 與 Counter1 完成超音波距離量測與七段顯示輸出。</div>
               <div class="ms-3 text-muted">Use Timer0 and Counter1 to measure distance with ultrasonic sensor and display on 7-seg.</div>
             </li>
-            
+
             <li>
               <a href="Principle_of_Microcomputer/Lab11報告.pdf" target="_blank">Lab 11 – 鍵盤音符控制與蜂鳴器旋律播放</a>
               <div class="ms-3 text-muted">
@@ -501,7 +499,7 @@
                 Controlled buzzer tones via keypad input (Do to Si), with advanced support for melody playback using lookup tables and Timer0 PWM control.
               </div>
             </li>
-            
+
             <li>
               <a href="Principle_of_Microcomputer/Lab12結報.pdf" target="_blank">Lab 12 – 串列通訊互動式顯示與音效系統</a>
               <div class="ms-3 text-muted">
@@ -509,7 +507,7 @@
                 Communicated with 8051 via serial port to display messages on 7-segment displays and play melodies in response, creating a synchronized visual-audio feedback system.
               </div>
             </li>
-            
+
             <li>
               <a href="Principle_of_Microcomputer/Final報告.pdf" target="_blank">
                 Final Project – 音樂播放器系統設計
@@ -519,7 +517,7 @@
             </li>  
           </ul>
 
-    
+
           <!-- 收起按鈕 -->
           <div class="mt-4">
             <button class="btn btn-outline-secondary btn-sm" type="button"
@@ -543,23 +541,24 @@
           <li><strong>Required/Elective:</strong> Required</li>
           <li><strong>Instructor:</strong> 余俊宏</li>
         </ul>
-    
+
         <!-- 簡短介紹 -->
         <p>
           本課程系統性介紹設計與分析演算法的方法，涵蓋排序、遞迴、動態規劃、圖論演算法與資料結構等，強調時間與空間複雜度的推導技巧與實作能力。<br>
           This course systematically introduces methods for designing and analyzing algorithms, covering sorting, recursion, dynamic programming, graph algorithms, and data structures. Emphasis is placed on analyzing time/space complexity and practical implementation.
         </p>
-    
+
         <!-- 展開按鈕 -->
         <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
           data-bs-toggle="collapse" data-bs-target="#algoDetails" aria-expanded="false"
           aria-controls="algoDetails">
           按我了解更多
         </button>
-    
+
         <!-- 展開區塊 -->
         <div class="collapse" id="algoDetails">
           <p>
+            本課程每週進行兩次授課，涵蓋以下主題：
             本課程為講授課程，並搭配實作內容，涵蓋：
           </p>
           <ul>
@@ -573,7 +572,7 @@
           <p>
             Weekly lectures cover both algorithm design principles and mathematical analysis. Topics include insertion sort, divide and conquer, dynamic programming, data structures (heaps, BSTs, disjoint sets), and classical graph algorithms such as shortest paths and max-flow.
           </p>
-    
+
           <!-- 📂 作業區保留 -->
           <h5 class="mt-4">📂 課程作業與成果</h5>
           <ul>
@@ -610,7 +609,7 @@
               <div class="ms-3 text-muted">Prim、Kruskal、Dijkstra、Bellman-Ford。<br>Implementing MST and shortest path algorithms.</div>
             </li>
           </ul>
-    
+
           <!-- 收起按鈕 -->
           <div class="mt-4">
             <button class="btn btn-outline-secondary btn-sm" type="button"
@@ -625,8 +624,7 @@
     </div>
 
 
-    <!--<h4 class="mt-4 mb-2">[通識]</h4>-->
-    <h4 class="mt-4 mb-2" id="general-courses">[通識]</h4>
+    <h4 class="mt-4 mb-2">[通識]</h4>
     <p class="ms-3 text-muted">（未填寫）</p>
 
     <h3 class="mt-5 mb-3" id="experience-offcampus">校外經歷</h3>
