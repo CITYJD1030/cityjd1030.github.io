@@ -45,11 +45,11 @@
     </a>
     <ul class="dropdown-menu bg-primary border-0" aria-labelledby="experienceDropdown">
       <li><a class="dropdown-item text-white text-center w-100" href="#experience-campus">校內經歷</a></li>
-      <li><hr class="dropdown-divider bg-light"></li>
+      <li><hr class="dropdown-divider" style="height: 2px; opacity: 1;"></li>
       <li><a class="dropdown-item text-white text-center w-100" href="#required-courses">必修課程</a></li>
       <li><a class="dropdown-item text-white text-center w-100" href="#elective-courses">選修課程</a></li>
       <li><a class="dropdown-item text-white text-center w-100" href="#general-courses">通識課程</a></li>
-      <li><hr class="dropdown-divider" style="height: 2px; opacity: 1;"></li>
+      <li><hr class="dropdown-divider bg-light"></li>
       <li><a class="dropdown-item text-white text-center w-100" href="#experience-offcampus">校外經歷</a></li>
     </ul>
 </li>
@@ -627,7 +627,68 @@
 
 
     <h4 class="mt-4 mb-2" id="general-courses">[通識]</h4>
-    <p class="ms-3 text-muted">（未填寫）</p>
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+      <div class="flex-grow-1">
+        <h3 class="mb-0">程式設計 Go Go Go</h3>
+        <h3 class="mb-0">Programming Go Go Go</h3>
+        <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
+        <ul class="list-unstyled ms-3">
+          <li><strong>Dept. of course offering:</strong> Department of Biological Science and Technology</li>
+          <li><strong>Required/Elective:</strong> Core curriculum</li>
+          <li><strong>Instructor:</strong> 羅惟正</li>
+        </ul>
+    
+        <p>
+          本課程為講授課程，並搭配實作內容，內容涵蓋：
+        </p>
+        <ul>
+          <li>程式設計核心能力：條件運算、邏輯封裝與模組設計</li>
+          <li>常用技巧：配對表思維、檔案處理、作業系統互動、外部程式呼叫</li>
+          <li>進階能力：大數據分析、平行運算</li>
+          <li>通用能力：變數操作、磁碟管理、陣列與迴圈等語法基本功</li>
+        </ul>
+    
+        <!-- 展開按鈕 -->
+        <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
+          data-bs-toggle="collapse" data-bs-target="#gogogoDetails" aria-expanded="false"
+          aria-controls="gogogoDetails">
+          按我了解更多
+        </button>
+    
+        <!-- 展開內容 -->
+        <div class="collapse" id="gogogoDetails">
+          <p>
+            這門課以 Google 開發的 Go 語言為主軸，進行跨層級的程式設計訓練。Go 為編譯式語言，擁有高效能的平行與分散運算能力，在人工智慧、大數據、雲端平台等應用場景中展現極大優勢。
+          </p>
+          <p>
+            本課程從語法結構與基礎邏輯出發，逐步引導學生進行模組化程式撰寫，並涵蓋作業系統層級的程式設計技巧，如檔案控制與外部程式呼叫，讓學生建立具備實用性與系統觀的程式思維。
+          </p>
+          <p>
+            課程理念著眼於資訊教育的普及與跨領域能力的培養，目標是培育能掌握數位工具、並能應用程式語言於生醫、社會、人文等不同背景的兩棲型人才。課程強調「看得懂程式、能與資訊科技對話」是新世代不可或缺的能力。
+          </p>
+          <p>
+            This course introduces the Go programming language developed by Google, focusing on both fundamental and advanced programming skills. As a compiled and concurrency-optimized language, Go is ideal for big data analysis, distributed systems, and high-performance applications.
+          </p>
+          <p>
+            Students learn to structure modular programs, interact with operating systems, and perform tasks such as file manipulation and subprocess invocation. The course emphasizes logical thinking and systems-level awareness, empowering students to write clean, efficient, and scalable code.
+          </p>
+          <p>
+            With a vision of fostering cross-disciplinary digital fluency, the course encourages learners from diverse fields to become proficient in code literacy, helping to bridge communication gaps across disciplines and prepare for the data-driven future.
+          </p>
+    
+          <!-- 收起按鈕 -->
+          <div class="mt-3">
+            <button class="btn btn-outline-secondary btn-sm" type="button"
+              data-bs-toggle="collapse" data-bs-target="#gogogoDetails" aria-expanded="true"
+              aria-controls="gogogoDetails">
+              收起內容
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
+    </div>
+
 
     <h3 class="mt-5 mb-3" id="experience-offcampus">校外經歷</h3>
     <p class="ms-3 text-muted">（未填寫）</p>
