@@ -161,639 +161,676 @@
     </div>
 
     <h4 class="mt-4 mb-2" id="elective-courses">[選修]</h4>
-    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-      <div class="flex-grow-1">
-        <h3 class="mb-0">AI 無線通訊系統實驗課</h3>
-        <h3 class="mb-0">AI Lab for Wireless Communication</h3>
-        <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
-        <ul class="list-unstyled ms-3">
-          <li><strong>Dept. of course offering:</strong> Department of Electrical and Computer Engineering</li>
-          <li><strong>Required/Elective:</strong> Elective</li>
-          <li><strong>Instructor:</strong> 黃昱智、方凱田、伍紹勳</li>
-        </ul>
-
-        <!-- 課程簡短介紹 -->
-        <p>
-          本課程透過實作方式介紹無線通訊技術與人工智慧演算法，涵蓋通道解碼、資源分配與雷達感測等主題，並強調 AI 在無線通訊中的實務應用。<br>
-          This course introduces wireless communication technologies and AI algorithms through hands-on projects, focusing on practical applications such as channel decoding, resource allocation, and radar sensing.
-        </p>
-
-        <!-- 按鈕：按我了解更多 -->
-        <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
-          data-bs-toggle="collapse" data-bs-target="#aiLabWirelessCollapse" aria-expanded="false"
-          aria-controls="aiLabWirelessCollapse">
-          按我了解更多
-        </button>
-
-        <!-- 展開內容區塊 -->
-        <div class="collapse" id="aiLabWirelessCollapse">
-          <p>
-            在本課程中，我透過 Python 實作多種 AI 演算法在無線通訊場景中的應用，內容包含通道解碼、熱點定位、網路資源分配與雷達感測等。<br>
-            In this course, I implemented various AI algorithms in Python to address real-world wireless communication problems such as channel decoding, hotspot localization, resource allocation, and radar sensing.
-          </p>
-
-          <p>
-            課程前段聚焦於通道解碼技術，從傳統演算法延伸至以 SVM 和深度學習為基礎的分類方法，並完成相關專題實作。<br>
-            The early part of the course focused on channel decoding, moving from traditional decoding algorithms to classification-based methods using SVMs and deep learning, culminating in a dedicated project.
-          </p>
-
-          <p>
-            中段課程介紹 Q-Learning 與 DQN，並實作於多 UE 的網路資源分配問題中，藉此了解 AI 強化學習在動態系統中的應用潛力。<br>
-            The middle section explored Q-Learning and DQN for multi-user downlink resource allocation, highlighting reinforcement learning's adaptability in dynamic environments.
-          </p>
-
-          <p>
-            後段課程延伸至雷達感測與生成模型，如 GAN、VAE、LSTM 與 CNN 在訊號解調、角度估計與室內定位的應用，並以多項專題作為整合驗證。<br>
-            The later part extended into radar sensing and generative modeling, where GANs, VAEs, LSTMs, and CNNs were used for signal demodulation, angle of arrival estimation, and indoor localization, culminating in several final projects.
-          </p>
-
-          <h5 class="mt-4">📂 課程資料與成果</h5>
-          <ul>
-            <li>
-              <a href="AI_Lab_for_Wireless_Communication/Moduel_1_Mini_Project_Final_Report_111511239_仇健安.pdf" target="_blank">
-                Module 1 - Mini Project Final Report
-              </a>
-              <div class="ms-3 text-muted">
-                比較多種通道解碼方法（Syndrome, ML, DNN, Autoencoder）於 AWGN 通道下的 BLER 表現。<br>
-                Compare decoding methods (Syndrome, ML, DNN, Autoencoder) on AWGN channel based on BLER performance.
-              </div>
-            </li>
-            <li>
-              <a href="AI_Lab_for_Wireless_Communication/Moduel_2_Lab_1_report_111511239_仇健安.pdf" target="_blank">
-                Module 2 - Lab 1: MNIST Fully Connected Classifier
-              </a>
-              <div class="ms-3 text-muted">
-                使用全連接神經網路訓練 MNIST 手寫數字辨識任務，達到近 98% 測試準確率。<br>
-                Trained a fully connected neural network for MNIST digit classification, achieving ~98% accuracy.
-              </div>
-            </li>
-            <li>
-              <a href="AI_Lab_for_Wireless_Communication/Moduel_2_Lab_2_Report_111511239_仇健安.pdf" target="_blank">
-                Module 2 - Lab 2: CNN-based Indoor Localization
-              </a>
-              <div class="ms-3 text-muted">
-                比較多種 CNN 架構於室內定位任務的效果，加入 BatchNorm、Dropout 與 Pooling 增強泛化能力。<br>
-                Compared CNN designs for indoor localization with added BatchNorm, Dropout, and Pooling to improve generalization.
-              </div>
-            </li>
-            <li>
-              <a href="AI_Lab_for_Wireless_Communication/Moduel_2_Lab_3_report_111511239_仇健安.pdf" target="_blank">
-                Module 2 - Lab 3: GAN for Data Generation
-              </a>
-              <div class="ms-3 text-muted">
-                使用 GAN 產生擬真資料增強模型判別能力，並探討對抗訓練流程與應用。<br>
-                Used GAN to generate synthetic samples for enhancing classification, and explored adversarial training processes.
-              </div>
-            </li>
-            <li>
-              <a href="AI_Lab_for_Wireless_Communication/Moduel_2_Lab_4_report_111511239_仇健安.pdf" target="_blank">
-                Module 2 - Lab 4: AE-GAN for Signal Augmentation
-              </a>
-              <div class="ms-3 text-muted">
-                將 Autoencoder 結合 GAN 用於訊號資料擴增，改善模型泛化與穩定性。<br>
-                Combined Autoencoder and GAN for signal augmentation to enhance model generalization and stability.
-              </div>
-            </li>
-            <li>
-              <a href="AI_Lab_for_Wireless_Communication/Moduel_2_Lab_5_report_111511239_仇健安.pdf" target="_blank">
-                Module 2 - Lab 5: Q-Learning Resource Allocation
-              </a>
-              <div class="ms-3 text-muted">
-                實作 Q-Learning 演算法於多 AP 多 UE 環境中的頻道與功率資源最佳化配置。<br>
-                Implemented Q-Learning for optimal frequency and power allocation in multi-AP, multi-UE environments.
-              </div>
-            </li>
-            <li>
-              <a href="AI_Lab_for_Wireless_Communication/Moduel_3_CNN方向預測報告_111511239_仇健安.pdf" target="_blank">
-                Module 3 - CNN-based Multi-direction Prediction
-              </a>
-              <div class="ms-3 text-muted">
-                使用 CNN 模型預測雷達目標方向，設計多卷積層與 Exact Match Accuracy 評估指標。<br>
-                Designed a CNN to predict radar target directions with Exact Match Accuracy for multi-label classification.
-              </div>
-            </li>
-          </ul>
-
-
-          <!-- 收起按鈕 -->
-          <div class="mt-4">
-            <button class="btn btn-outline-secondary btn-sm" type="button"
-              data-bs-toggle="collapse" data-bs-target="#aiLabWirelessCollapse" aria-expanded="true"
-              aria-controls="aiLabWirelessCollapse">
-              收起內容
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
-    </div>
-
-
-    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-      <div class="flex-grow-1">
-        <h3 class="mb-0">用Python於深度學習</h3>
-        <h3 class="mb-0">Labs on Python for Deep Learning</h3>
-        <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
-        <ul class="list-unstyled ms-3">
-          <li><strong>Dept. of course offering:</strong> Department of Electrical and Computer Engineering</li>
-          <li><strong>Required/Elective:</strong> Elective</li>
-          <li><strong>Instructor:</strong> 李冕</li>
-        </ul>
-        <!-- 簡短介紹（會一直顯示） -->
-        <p>使用Python完成多種深度學習模型應用，並透過各種實作、分析與比較，了解各種有關深度學習的相關知識。以下為課程的Challenge與我的成果：</p>
-        <p>Use Python to complete various deep learning model applications, and learn various deep learning related knowledge through various practices, analysis and comparisons. The following are the challenges of the course and my achievements:</p>
-
-        <!-- 按我了解更多按鈕 -->
-        <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
-          data-bs-toggle="collapse" data-bs-target="#dlCourseDetails" aria-expanded="false"
-          aria-controls="dlCourseDetails" id="showMoreBtn">
-          按我了解更多
-        </button>
-
-        <!-- 詳細介紹區塊（collapse） -->
-        <div class="collapse" id="dlCourseDetails">
-          <ul>
-            <li>
-              <a href="Labs_on_Python_for_Deep_Learning/Challenge1_report_仇健安.pdf" target="_blank">
-                Challenge 1: Activation Functions for Function Upscaling
-              </a>
-              <div class="ms-4 text-muted">比較不同 activation function（ReLU, GELU 等）在函數近似與外推的效能差異。</div>
-              <div class="ms-4 text-muted">Compare the performance differences of different activation functions (ReLU, GELU, etc.) in function approximation and extrapolation.</div>
-            </li>
-            <li>
-              <a href="Labs_on_Python_for_Deep_Learning/Challenge2_report_仇健安.pdf" target="_blank">
-                Challenge 2: Gradient Descent Variants
-              </a>
-              <div class="ms-4 text-muted">探索 Adam、Momentum、SGD 等學習演算法在不同 loss 曲面上的收斂速度。</div>
-              <div class="ms-4 text-muted">Explore the convergence speed of learning algorithms such as Adam, Momentum, SGD on different loss surfaces.</div>
-            </li>
-            <li>
-              <a href="Labs_on_Python_for_Deep_Learning/Challenge3_report_仇健安.pdf" target="_blank">
-                Challenge 3: Padding Effects in CNN/RNN/GRU
-              </a>
-              <div class="ms-4 text-muted">比較不同 padding 策略對 NLP 模型的 F1 / AUC 表現。</div>
-              <div class="ms-4 text-muted">Compare the F1 / AUC performance of different padding strategies on NLP models.</div>
-            </li>
-            <li>
-              <a href="Labs_on_Python_for_Deep_Learning/Challenge4_report_仇健安.pdf" target="_blank">
-                Challenge 4: Word Embedding with BERT
-              </a>
-              <div class="ms-4 text-muted">以 BERT 模型實作問答與分類任務，理解其 embedding 與 attention 機制。</div>
-              <div class="ms-4 text-muted">Implement question answering and classification tasks using the BERT model to understand its embedding and attention mechanisms.</div>
-            </li>
-            <li>
-              <a href="Labs_on_Python_for_Deep_Learning/Challenge5_report_仇健安.pdf" target="_blank">
-                Challenge 5: Dissecting Attention Mechanisms and Training Transformers
-              </a>
-              <div class="ms-4 text-muted">本挑戰深入探索 Transformer 的注意力機制並實作英德翻譯模型。</div>
-              <div class="ms-4 text-muted">This project explores attention in Transformers and builds a translation model.</div>
-            </li>
-            <li>
-              <a href="Labs_on_Python_for_Deep_Learning/Challenge6_report_仇健安.pdf" target="_blank">
-                Challenge 6: Embedding Edit Distance with Variational Autoencoders
-              </a>
-              <div class="ms-4 text-muted">使用 VAE 建構潛在空間以反映二進位序列的編輯距離。</div>
-              <div class="ms-4 text-muted">Use VAE to embed binary sequences, making latent distances reflect edit distances.</div>
-            </li>
-          </ul>
-          <p>
-            在這門課中，我透過 Python 與 PyTorch 實作多種統計學與深度學習模型，內容涵蓋從基礎函數擬合到生成模型、強化學習等主題，並搭配期末專題進行整合應用。<br>
-            In this course, I implemented a wide range of statistical and deep learning models using Python and PyTorch, covering topics from function fitting and unsupervised learning to generative models and reinforcement learning, and concluded with a final project.
-          </p>
-
-          <p>
-            課程前半介紹了平滑器（Smoothers）、樣條函數（Splines）與廣義加性模型（GAMs），並延伸至無監督式學習（如群集分析）與貝氏統計與階層式模型。<br>
-            The first part of the course focused on smoothers, splines, and generalized additive models (GAMs), and extended to unsupervised learning such as clustering, as well as Bayesian statistics and hierarchical modeling.
-          </p>
-
-          <p>
-            深度學習部分，我學習了卷積神經網路（CNN）、回傳誤差（Backpropagation）、視野與特徵圖可視化（Feature Map Visualization）、注意力熱點（Saliency Maps）與遷移學習等核心概念。<br>
-            In the deep learning section, I explored convolutional neural networks (CNNs), backpropagation, receptive fields, feature map visualization, saliency maps, and transfer learning techniques.
-          </p>
-
-          <p>
-            在處理序列資料的章節中，我實作了 RNN、GRU、LSTM 以進行語言建模任務，並比較其在不同語言嵌入技術（如 Word2Vec）下的表現。<br>
-            For sequential data tasks, I implemented RNNs, GRUs, and LSTMs for language modeling, and evaluated their performance using various word embedding techniques like Word2Vec.
-          </p>
-
-          <p>
-            我也學習了 Transformer、Autoencoder、變分自編碼器（VAE），並進一步深入生成對抗網路（GANs）與深度強化學習（Deep RL）在資料生成與決策中的應用。<br>
-            I also worked with Transformer models, autoencoders, and variational autoencoders (VAEs), and further explored generative adversarial networks (GANs) and deep reinforcement learning for data generation and decision-making tasks.
-          </p>
-
-
-          <!-- 收起按鈕（放在最下方） -->
-          <div class="mt-4">
-            <button class="btn btn-outline-secondary btn-sm" type="button"
-              data-bs-toggle="collapse" data-bs-target="#dlCourseDetails" aria-expanded="true"
-              aria-controls="dlCourseDetails">
-              收起內容
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
-    </div>
-
-    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-      <div class="flex-grow-1">
-        <h3 class="mb-0">微算機原理與實驗</h3>
-        <h3 class="mb-0">Principle of Microcomputer</h3>
-        <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
-        <ul class="list-unstyled ms-3">
-          <li><strong>Dept. of course offering:</strong> Department of Electrical and Computer Engineering</li>
-          <li><strong>Required/Elective:</strong> Elective</li>
-          <li><strong>Instructor:</strong> 王宜楷</li>
-        </ul>
-
-        <!-- 簡短介紹 -->
-        <p>
-          本課程介紹 8051 微控制器架構與應用，涵蓋組合語言、I/O 操作、中斷、計時器、串列通訊等主題，透過理論與實驗課程並重，培養設計與除錯微控制系統的實作能力。<br>
-          This course introduces the architecture and applications of the 8051 microcontroller, covering assembly language, I/O operations, interrupts, timers, and serial communication. Through combined lectures and hands-on labs, students gain practical skills in designing and debugging microcontroller systems.
-        </p>
-
         <!-- 展開按鈕 -->
-        <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
-          data-bs-toggle="collapse" data-bs-target="#microcomputerDetails" aria-expanded="false"
-          aria-controls="microcomputerDetails">
-          按我了解更多
-        </button>
+    <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
+      data-bs-toggle="collapse" data-bs-target="#electiveCoursesCollapse"
+      aria-expanded="false" aria-controls="electiveCoursesCollapse">
+      查看選修課程
+    </button>
 
-        <!-- 展開內容 -->
-        <div class="collapse" id="microcomputerDetails">
-          <p>
-            本課程兼具理論講授與作業實作，內容涵蓋：
-          </p>
-          <ul>
-            <li>8051 單晶片微控器介紹與軟體模擬器、ICE 開發環境實作</li>
-            <li>指令集與組合語言實作</li>
-            <li>I/O 操作與數位輸入輸出控制</li>
-            <li>Timer/Counter 計時與週期性觸發控制</li>
-            <li>外部中斷與定時中斷處理</li>
-            <li>串列傳輸 UART 程式設計與應用</li>
-            <li>微電腦系統與嵌入式應用概念整合</li>
+    <!-- collapse 區塊：包住所有選修課 -->
+    <div class="collapse" id="electiveCoursesCollapse">
+      
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">AI 無線通訊系統實驗課</h3>
+          <h3 class="mb-0">AI Lab for Wireless Communication</h3>
+          <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
+          <ul class="list-unstyled ms-3">
+            <li><strong>Dept. of course offering:</strong> Department of Electrical and Computer Engineering</li>
+            <li><strong>Required/Elective:</strong> Elective</li>
+            <li><strong>Instructor:</strong> 黃昱智、方凱田、伍紹勳</li>
           </ul>
+  
+          <!-- 課程簡短介紹 -->
           <p>
-            This lab-based course covers both theoretical concepts and practical implementation of microcontroller systems, enabling students to develop low-level programs in assembly and C, interface with hardware, and analyze timing and interrupt behavior in real time.
+            本課程透過實作方式介紹無線通訊技術與人工智慧演算法，涵蓋通道解碼、資源分配與雷達感測等主題，並強調 AI 在無線通訊中的實務應用。<br>
+            This course introduces wireless communication technologies and AI algorithms through hands-on projects, focusing on practical applications such as channel decoding, resource allocation, and radar sensing.
           </p>
-
-          <h5 class="mt-4">📂 課程資料與成果</h5>
-          <ul>
-
-            <li>
-              <a href="Principle_of_Microcomputer/Lab1結報.pdf" target="_blank">Lab 1 - LED 跑馬燈與霹靂燈效果</a>
-              <div class="ms-3 text-muted">使用 8051 組合語言撰寫 LED 跑馬燈與霹靂燈程式，學習基本 I/O 控制與延遲函數。<br>Implemented LED chasing and blinking effects using 8051 assembly to learn basic I/O control and delay routines.</div>
-            </li>
-
-            <li>
-              <a href="Principle_of_Microcomputer/Lab2報告.pdf" target="_blank">Lab 2 - 使用指撥開關控制 LED 與跑馬燈</a>
-              <div class="ms-3 text-muted">透過指撥開關輸入控制 LED 顯示與跑馬燈效果，加強 I/O 控制與 delay 時間調整概念。<br>Used DIP switches to control LED outputs and implement a running light pattern, reinforcing I/O and delay control concepts.</div>
-            </li>
-
-            <li>
-              <a href="Principle_of_Microcomputer/Lab3報告.pdf" target="_blank">Lab 3 - 七段顯示器顯示數字與字母</a>
-              <div class="ms-3 text-muted">練習共陽極七段顯示器的控制，顯示 0~9 及 A~F 字元，並使用 TABLE 儲存顯示資料。<br>Practiced controlling common-anode 7-segment displays to show digits and letters using lookup TABLE.</div>
-            </li>
-
-            <li>
-              <a href="Principle_of_Microcomputer/Lab4報告.pdf" target="_blank">Lab 4 - 四合一七段顯示器計數器設計</a>
-              <div class="ms-3 text-muted">實作四合一共陽極七段顯示器的倒數計時器，學習多位元輪流顯示與亮度一致的技巧。<br>Designed a countdown timer using 4-digit 7-segment display and learned multiplexing techniques for uniform brightness.</div>
-            </li>
-
-            <li>
-              <a href="Principle_of_Microcomputer/Lab5報告.pdf" target="_blank">Lab 5 - 5x7 點矩陣 LED 動畫與字型切換</a>
-              <div class="ms-3 text-muted">
-                控制 5x7 點矩陣 LED 顯示器顯示「大」、「中」、「小」等中文字樣，並透過掃描顯示與延遲切換達成動畫效果，理解共陽/共陰驅動方式與視覺暫留原理。<br>
-                Controlled a 5x7 dot matrix LED to animate Chinese characters like "大", "中", and "小" through scanning and timed switching. Explored circuit-level control using 74LS244 and ULN2004.
-              </div>
-            </li>
-
-            <li>
-              <a href="Principle_of_Microcomputer/Lab6報告.pdf" target="_blank">Lab 6 - 矩陣鍵盤輸入與七段顯示器結合</a>
-              <div class="ms-3 text-muted">
-                使用 4x4 鍵盤模組進行掃描輸入，並將按鍵結果顯示於七段顯示器上。實作防彈跳機制並了解鍵盤行列掃描邏輯。<br>
-                Implemented matrix keypad scanning and showed the key result on a 7-segment display. Practiced debounce handling and row-column input logic.
-              </div>
-            </li>
-
-            <li>
-              <a href="Principle_of_Microcomputer/Lab7報告.pdf" target="_blank">Lab 7 - 步進馬達控制與小鍵盤輸入</a>
-              <div class="ms-3 text-muted">
-                控制步進馬達進行順時鐘與逆時鐘旋轉，結合鍵盤輸入選擇不同激磁方式（1相、2相、1-2相），觀察轉矩與穩定性差異。<br>
-                Controlled a stepper motor with keyboard input to switch between excitation modes (1-phase, 2-phase, 1-2-phase), analyzing torque and stability across methods.
-              </div>
-            </li>
-
-            <li>
-              <a href="Principle_of_Microcomputer/Lab8報告.pdf" target="_blank">Lab 8 - LCD 顯示與自訂動畫圖形</a>
-              <div class="ms-3 text-muted">
-                控制字元型 LCD 顯示模組進行文字輸出，進階挑戰使用 CGRAM 實作動畫角色切換效果。<br>
-                Controlled a character-based LCD module for static display and created animated figures using CGRAM custom characters.
-              </div>
-            </li>
-
-            <li>
-              <a href="Principle_of_Microcomputer/Lab9-1報告.pdf" target="_blank">Lab 9-1 - 使用 TABLE 控制旋轉 LED 顯示中文字</a>
-              <div class="ms-3 text-muted">以資料表控制旋轉 LED 點陣顯示「別當我」中文字，並解決 DPTR 無法存取大於 256 bytes 資料的問題。<br>Controlled spinning LED display to show Chinese characters using table lookup, addressing DPTR limitations on large tables.</div>
-            </li>
-
-            <li>
-              <a href="Principle_of_Microcomputer/Lab9-2報告.pdf" target="_blank">Lab 9-2 - 外部中斷與旋轉 LED 顯示控制</a>
-              <div class="ms-3 text-muted">
-                透過 INT0 中斷偵測旋轉訊號並啟動 LED 字型資料顯示，成功實現「別當我」字樣的穩定捲動動畫。<br>
-                Used INT0 interrupt to synchronize and trigger character display on a rotating LED system, enabling animated scrolling of Chinese characters.
-              </div>
-            </li>
-
-            <li>
-              <a href="Principle_of_Microcomputer/Lab10報告.pdf" target="_blank">
-                Lab 10 – 超音波測距系統設計
-              </a>
-              <div class="ms-3 text-muted">整合 Timer0 與 Counter1 完成超音波距離量測與七段顯示輸出。</div>
-              <div class="ms-3 text-muted">Use Timer0 and Counter1 to measure distance with ultrasonic sensor and display on 7-seg.</div>
-            </li>
-
-            <li>
-              <a href="Principle_of_Microcomputer/Lab11報告.pdf" target="_blank">Lab 11 – 鍵盤音符控制與蜂鳴器旋律播放</a>
-              <div class="ms-3 text-muted">
-                使用矩陣鍵盤輸入控制蜂鳴器播放 Do~Si 音符，進階挑戰以查表方式實作完整旋律如「小蜜蜂」。<br>
-                Controlled buzzer tones via keypad input (Do to Si), with advanced support for melody playback using lookup tables and Timer0 PWM control.
-              </div>
-            </li>
-
-            <li>
-              <a href="Principle_of_Microcomputer/Lab12結報.pdf" target="_blank">Lab 12 – 串列通訊互動式顯示與音效系統</a>
-              <div class="ms-3 text-muted">
-                透過電腦與 8051 串列埠傳送文字指令，控制七段顯示器顯示內容並同步播放對應旋律，整合視覺與聲音的互動回應。<br>
-                Communicated with 8051 via serial port to display messages on 7-segment displays and play melodies in response, creating a synchronized visual-audio feedback system.
-              </div>
-            </li>
-
-            <li>
-              <a href="Principle_of_Microcomputer/Final報告.pdf" target="_blank">
-                Final Project – 音樂播放器系統設計
-              </a>
-              <div class="ms-3 text-muted">以 8051 為核心實作可選曲、顯示與播放功能的嵌入式音樂播放器。</div>
-              <div class="ms-3 text-muted">An embedded music player with song selection, display, and playback features built on 8051.</div>
-            </li>  
-          </ul>
-
-
-          <!-- 收起按鈕 -->
-          <div class="mt-4">
-            <button class="btn btn-outline-secondary btn-sm" type="button"
-              data-bs-toggle="collapse" data-bs-target="#microcomputerDetails" aria-expanded="true"
-              aria-controls="microcomputerDetails">
-              收起內容
-            </button>
+  
+          <!-- 按鈕：按我了解更多 -->
+          <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
+            data-bs-toggle="collapse" data-bs-target="#aiLabWirelessCollapse" aria-expanded="false"
+            aria-controls="aiLabWirelessCollapse">
+            按我了解更多
+          </button>
+  
+          <!-- 展開內容區塊 -->
+          <div class="collapse" id="aiLabWirelessCollapse">
+            <p>
+              在本課程中，我透過 Python 實作多種 AI 演算法在無線通訊場景中的應用，內容包含通道解碼、熱點定位、網路資源分配與雷達感測等。<br>
+              In this course, I implemented various AI algorithms in Python to address real-world wireless communication problems such as channel decoding, hotspot localization, resource allocation, and radar sensing.
+            </p>
+  
+            <p>
+              課程前段聚焦於通道解碼技術，從傳統演算法延伸至以 SVM 和深度學習為基礎的分類方法，並完成相關專題實作。<br>
+              The early part of the course focused on channel decoding, moving from traditional decoding algorithms to classification-based methods using SVMs and deep learning, culminating in a dedicated project.
+            </p>
+  
+            <p>
+              中段課程介紹 Q-Learning 與 DQN，並實作於多 UE 的網路資源分配問題中，藉此了解 AI 強化學習在動態系統中的應用潛力。<br>
+              The middle section explored Q-Learning and DQN for multi-user downlink resource allocation, highlighting reinforcement learning's adaptability in dynamic environments.
+            </p>
+  
+            <p>
+              後段課程延伸至雷達感測與生成模型，如 GAN、VAE、LSTM 與 CNN 在訊號解調、角度估計與室內定位的應用，並以多項專題作為整合驗證。<br>
+              The later part extended into radar sensing and generative modeling, where GANs, VAEs, LSTMs, and CNNs were used for signal demodulation, angle of arrival estimation, and indoor localization, culminating in several final projects.
+            </p>
+  
+            <h5 class="mt-4">📂 課程資料與成果</h5>
+            <ul>
+              <li>
+                <a href="AI_Lab_for_Wireless_Communication/Moduel_1_Mini_Project_Final_Report_111511239_仇健安.pdf" target="_blank">
+                  Module 1 - Mini Project Final Report
+                </a>
+                <div class="ms-3 text-muted">
+                  比較多種通道解碼方法（Syndrome, ML, DNN, Autoencoder）於 AWGN 通道下的 BLER 表現。<br>
+                  Compare decoding methods (Syndrome, ML, DNN, Autoencoder) on AWGN channel based on BLER performance.
+                </div>
+              </li>
+              <li>
+                <a href="AI_Lab_for_Wireless_Communication/Moduel_2_Lab_1_report_111511239_仇健安.pdf" target="_blank">
+                  Module 2 - Lab 1: MNIST Fully Connected Classifier
+                </a>
+                <div class="ms-3 text-muted">
+                  使用全連接神經網路訓練 MNIST 手寫數字辨識任務，達到近 98% 測試準確率。<br>
+                  Trained a fully connected neural network for MNIST digit classification, achieving ~98% accuracy.
+                </div>
+              </li>
+              <li>
+                <a href="AI_Lab_for_Wireless_Communication/Moduel_2_Lab_2_Report_111511239_仇健安.pdf" target="_blank">
+                  Module 2 - Lab 2: CNN-based Indoor Localization
+                </a>
+                <div class="ms-3 text-muted">
+                  比較多種 CNN 架構於室內定位任務的效果，加入 BatchNorm、Dropout 與 Pooling 增強泛化能力。<br>
+                  Compared CNN designs for indoor localization with added BatchNorm, Dropout, and Pooling to improve generalization.
+                </div>
+              </li>
+              <li>
+                <a href="AI_Lab_for_Wireless_Communication/Moduel_2_Lab_3_report_111511239_仇健安.pdf" target="_blank">
+                  Module 2 - Lab 3: GAN for Data Generation
+                </a>
+                <div class="ms-3 text-muted">
+                  使用 GAN 產生擬真資料增強模型判別能力，並探討對抗訓練流程與應用。<br>
+                  Used GAN to generate synthetic samples for enhancing classification, and explored adversarial training processes.
+                </div>
+              </li>
+              <li>
+                <a href="AI_Lab_for_Wireless_Communication/Moduel_2_Lab_4_report_111511239_仇健安.pdf" target="_blank">
+                  Module 2 - Lab 4: AE-GAN for Signal Augmentation
+                </a>
+                <div class="ms-3 text-muted">
+                  將 Autoencoder 結合 GAN 用於訊號資料擴增，改善模型泛化與穩定性。<br>
+                  Combined Autoencoder and GAN for signal augmentation to enhance model generalization and stability.
+                </div>
+              </li>
+              <li>
+                <a href="AI_Lab_for_Wireless_Communication/Moduel_2_Lab_5_report_111511239_仇健安.pdf" target="_blank">
+                  Module 2 - Lab 5: Q-Learning Resource Allocation
+                </a>
+                <div class="ms-3 text-muted">
+                  實作 Q-Learning 演算法於多 AP 多 UE 環境中的頻道與功率資源最佳化配置。<br>
+                  Implemented Q-Learning for optimal frequency and power allocation in multi-AP, multi-UE environments.
+                </div>
+              </li>
+              <li>
+                <a href="AI_Lab_for_Wireless_Communication/Moduel_3_CNN方向預測報告_111511239_仇健安.pdf" target="_blank">
+                  Module 3 - CNN-based Multi-direction Prediction
+                </a>
+                <div class="ms-3 text-muted">
+                  使用 CNN 模型預測雷達目標方向，設計多卷積層與 Exact Match Accuracy 評估指標。<br>
+                  Designed a CNN to predict radar target directions with Exact Match Accuracy for multi-label classification.
+                </div>
+              </li>
+            </ul>
+  
+  
+            <!-- 收起按鈕 -->
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" type="button"
+                data-bs-toggle="collapse" data-bs-target="#aiLabWirelessCollapse" aria-expanded="true"
+                aria-controls="aiLabWirelessCollapse">
+                收起內容
+              </button>
+            </div>
           </div>
         </div>
+        <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
       </div>
-      <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
-    </div>
-
-    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-      <div class="flex-grow-1">
-        <h3 class="mb-0">演算法導論</h3>
-        <h3 class="mb-0">Introduction to Algorithms</h3>
-        <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
-        <ul class="list-unstyled ms-3">
-          <li><strong>Dept. of course offering:</strong> Department of Electrical and Computer Engineering</li>
-          <li><strong>Required/Elective:</strong> Required</li>
-          <li><strong>Instructor:</strong> 余俊宏</li>
-        </ul>
-    
-        <!-- 簡短介紹 -->
-        <p>
-          本課程系統性介紹設計與分析演算法的方法，涵蓋排序、遞迴、動態規劃、圖論演算法與資料結構等，強調時間與空間複雜度的推導技巧與實作能力。<br>
-          This course systematically introduces methods for designing and analyzing algorithms, covering sorting, recursion, dynamic programming, graph algorithms, and data structures. Emphasis is placed on analyzing time/space complexity and practical implementation.
-        </p>
-    
-        <!-- 展開按鈕 -->
-        <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
-          data-bs-toggle="collapse" data-bs-target="#algoDetails" aria-expanded="false"
-          aria-controls="algoDetails">
-          按我了解更多
-        </button>
-    
-        <!-- 展開區塊 -->
-        <div class="collapse" id="algoDetails">
-          <p>
-            本課程為講授課程，並搭配作業實作內容，涵蓋：
-          </p>
-          <ul>
-            <li>基本排序：Insertion Sort、Growth of Functions</li>
-            <li>遞迴與分治法：Divide and Conquer、Strassen's Algorithm、Recurrences</li>
-            <li>資料結構：Heaps、BST、Hash Tables、Disjoint Sets</li>
-            <li>動態規劃：經典範例與表格法設計</li>
-            <li>圖論演算法：BFS/DFS、Topological Sort、Flow Network、MST、Shortest Paths</li>
-            <li>演算法分析技巧：漸進符號、遞迴式、計算複雜度</li>
+  
+  
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">用Python於深度學習</h3>
+          <h3 class="mb-0">Labs on Python for Deep Learning</h3>
+          <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
+          <ul class="list-unstyled ms-3">
+            <li><strong>Dept. of course offering:</strong> Department of Electrical and Computer Engineering</li>
+            <li><strong>Required/Elective:</strong> Elective</li>
+            <li><strong>Instructor:</strong> 李冕</li>
           </ul>
-          <p>
-            Weekly lectures cover both algorithm design principles and mathematical analysis. Topics include insertion sort, divide and conquer, dynamic programming, data structures (heaps, BSTs, disjoint sets), and classical graph algorithms such as shortest paths and max-flow.
-          </p>
-    
-          <!-- 📂 作業區保留 -->
-          <h5 class="mt-4">📂 課程作業與成果</h5>
-          <ul>
-            <li>
-              <a href="Intro_to_Algorithms/HW1.pdf" target="_blank">Homework 1 - Insertion Sort & Complexity Analysis</a>
-              <div class="ms-3 text-muted">分析插入排序時間複雜度與簡單迴圈計數。<br>Analyzed time complexity and iteration behavior of insertion sort.</div>
-            </li>
-            <li>
-              <a href="Intro_to_Algorithms/HW2.pdf" target="_blank">Homework 2 - Divide and Conquer</a>
-              <div class="ms-3 text-muted">實作合併排序與遞迴式分析。<br>Implemented merge sort and solved recurrence relations.</div>
-            </li>
-            <li>
-              <a href="Intro_to_Algorithms/HW3.pdf" target="_blank">Homework 3 - Heaps and Priority Queues</a>
-              <div class="ms-3 text-muted">練習 Heap 操作與應用在排序與排程問題。<br>Practiced heap operations and applications in sorting/scheduling.</div>
-            </li>
-            <li>
-              <a href="Intro_to_Algorithms/HW4.pdf" target="_blank">Homework 4 - Dynamic Programming I</a>
-              <div class="ms-3 text-muted">背包問題與最長共同子序列 (LCS)。<br>Solving problems like 0/1 Knapsack and LCS with DP.</div>
-            </li>
-            <li>
-              <a href="Intro_to_Algorithms/HW5.pdf" target="_blank">Homework 5 - Dynamic Programming II</a>
-              <div class="ms-3 text-muted">切割問題、區間 DP 與記憶化遞迴。<br>Matrix chain multiplication, interval DP and memoization.</div>
-            </li>
-            <li>
-              <a href="Intro_to_Algorithms/HW6.pdf" target="_blank">Homework 6 - Graph Traversal and Topo Sort</a>
-              <div class="ms-3 text-muted">DFS、BFS 與拓撲排序應用。<br>Depth-first/breadth-first search and topological sort practice.</div>
-            </li>
-            <li>
-              <a href="Intro_to_Algorithms/HW7.pdf" target="_blank">Homework 7 - Max Flow and Matching</a>
-              <div class="ms-3 text-muted">Ford-Fulkerson 演算法與二分圖最大匹配。<br>Ford-Fulkerson algorithm and bipartite matching problem.</div>
-            </li>
-            <li>
-              <a href="Intro_to_Algorithms/HW8.pdf" target="_blank">Homework 8 - MST and Shortest Path</a>
-              <div class="ms-3 text-muted">Prim、Kruskal、Dijkstra、Bellman-Ford。<br>Implementing MST and shortest path algorithms.</div>
-            </li>
-          </ul>
-    
-          <!-- 收起按鈕 -->
-          <div class="mt-4">
-            <button class="btn btn-outline-secondary btn-sm" type="button"
-              data-bs-toggle="collapse" data-bs-target="#algoDetails" aria-expanded="true"
-              aria-controls="algoDetails">
-              收起內容
-            </button>
+          <!-- 簡短介紹（會一直顯示） -->
+          <p>使用Python完成多種深度學習模型應用，並透過各種實作、分析與比較，了解各種有關深度學習的相關知識。以下為課程的Challenge與我的成果：</p>
+          <p>Use Python to complete various deep learning model applications, and learn various deep learning related knowledge through various practices, analysis and comparisons. The following are the challenges of the course and my achievements:</p>
+  
+          <!-- 按我了解更多按鈕 -->
+          <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
+            data-bs-toggle="collapse" data-bs-target="#dlCourseDetails" aria-expanded="false"
+            aria-controls="dlCourseDetails" id="showMoreBtn">
+            按我了解更多
+          </button>
+  
+          <!-- 詳細介紹區塊（collapse） -->
+          <div class="collapse" id="dlCourseDetails">
+            <ul>
+              <li>
+                <a href="Labs_on_Python_for_Deep_Learning/Challenge1_report_仇健安.pdf" target="_blank">
+                  Challenge 1: Activation Functions for Function Upscaling
+                </a>
+                <div class="ms-4 text-muted">比較不同 activation function（ReLU, GELU 等）在函數近似與外推的效能差異。</div>
+                <div class="ms-4 text-muted">Compare the performance differences of different activation functions (ReLU, GELU, etc.) in function approximation and extrapolation.</div>
+              </li>
+              <li>
+                <a href="Labs_on_Python_for_Deep_Learning/Challenge2_report_仇健安.pdf" target="_blank">
+                  Challenge 2: Gradient Descent Variants
+                </a>
+                <div class="ms-4 text-muted">探索 Adam、Momentum、SGD 等學習演算法在不同 loss 曲面上的收斂速度。</div>
+                <div class="ms-4 text-muted">Explore the convergence speed of learning algorithms such as Adam, Momentum, SGD on different loss surfaces.</div>
+              </li>
+              <li>
+                <a href="Labs_on_Python_for_Deep_Learning/Challenge3_report_仇健安.pdf" target="_blank">
+                  Challenge 3: Padding Effects in CNN/RNN/GRU
+                </a>
+                <div class="ms-4 text-muted">比較不同 padding 策略對 NLP 模型的 F1 / AUC 表現。</div>
+                <div class="ms-4 text-muted">Compare the F1 / AUC performance of different padding strategies on NLP models.</div>
+              </li>
+              <li>
+                <a href="Labs_on_Python_for_Deep_Learning/Challenge4_report_仇健安.pdf" target="_blank">
+                  Challenge 4: Word Embedding with BERT
+                </a>
+                <div class="ms-4 text-muted">以 BERT 模型實作問答與分類任務，理解其 embedding 與 attention 機制。</div>
+                <div class="ms-4 text-muted">Implement question answering and classification tasks using the BERT model to understand its embedding and attention mechanisms.</div>
+              </li>
+              <li>
+                <a href="Labs_on_Python_for_Deep_Learning/Challenge5_report_仇健安.pdf" target="_blank">
+                  Challenge 5: Dissecting Attention Mechanisms and Training Transformers
+                </a>
+                <div class="ms-4 text-muted">本挑戰深入探索 Transformer 的注意力機制並實作英德翻譯模型。</div>
+                <div class="ms-4 text-muted">This project explores attention in Transformers and builds a translation model.</div>
+              </li>
+              <li>
+                <a href="Labs_on_Python_for_Deep_Learning/Challenge6_report_仇健安.pdf" target="_blank">
+                  Challenge 6: Embedding Edit Distance with Variational Autoencoders
+                </a>
+                <div class="ms-4 text-muted">使用 VAE 建構潛在空間以反映二進位序列的編輯距離。</div>
+                <div class="ms-4 text-muted">Use VAE to embed binary sequences, making latent distances reflect edit distances.</div>
+              </li>
+            </ul>
+            <p>
+              在這門課中，我透過 Python 與 PyTorch 實作多種統計學與深度學習模型，內容涵蓋從基礎函數擬合到生成模型、強化學習等主題，並搭配期末專題進行整合應用。<br>
+              In this course, I implemented a wide range of statistical and deep learning models using Python and PyTorch, covering topics from function fitting and unsupervised learning to generative models and reinforcement learning, and concluded with a final project.
+            </p>
+  
+            <p>
+              課程前半介紹了平滑器（Smoothers）、樣條函數（Splines）與廣義加性模型（GAMs），並延伸至無監督式學習（如群集分析）與貝氏統計與階層式模型。<br>
+              The first part of the course focused on smoothers, splines, and generalized additive models (GAMs), and extended to unsupervised learning such as clustering, as well as Bayesian statistics and hierarchical modeling.
+            </p>
+  
+            <p>
+              深度學習部分，我學習了卷積神經網路（CNN）、回傳誤差（Backpropagation）、視野與特徵圖可視化（Feature Map Visualization）、注意力熱點（Saliency Maps）與遷移學習等核心概念。<br>
+              In the deep learning section, I explored convolutional neural networks (CNNs), backpropagation, receptive fields, feature map visualization, saliency maps, and transfer learning techniques.
+            </p>
+  
+            <p>
+              在處理序列資料的章節中，我實作了 RNN、GRU、LSTM 以進行語言建模任務，並比較其在不同語言嵌入技術（如 Word2Vec）下的表現。<br>
+              For sequential data tasks, I implemented RNNs, GRUs, and LSTMs for language modeling, and evaluated their performance using various word embedding techniques like Word2Vec.
+            </p>
+  
+            <p>
+              我也學習了 Transformer、Autoencoder、變分自編碼器（VAE），並進一步深入生成對抗網路（GANs）與深度強化學習（Deep RL）在資料生成與決策中的應用。<br>
+              I also worked with Transformer models, autoencoders, and variational autoencoders (VAEs), and further explored generative adversarial networks (GANs) and deep reinforcement learning for data generation and decision-making tasks.
+            </p>
+  
+  
+            <!-- 收起按鈕（放在最下方） -->
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" type="button"
+                data-bs-toggle="collapse" data-bs-target="#dlCourseDetails" aria-expanded="true"
+                aria-controls="dlCourseDetails">
+                收起內容
+              </button>
+            </div>
           </div>
         </div>
+        <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
       </div>
-      <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
-    </div>
-
-    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-      <div class="flex-grow-1">
-        <h3 class="mb-0">超大型積體電路設計導論</h3>
-        <h3 class="mb-0">Introduction to VLSI Design</h3>
-        <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
-        <ul class="list-unstyled ms-3">
-          <li><strong>Dept. of course offering:</strong> Department of Electrical and Computer Engineering</li>
-          <li><strong>Required/Elective:</strong> Elective</li>
-          <li><strong>Instructor:</strong> 李鎮宜</li>
-        </ul>
-    
-        <p>本課程為講授課程，並搭配實作內容，內容涵蓋：</p>
-        <ul>
-          <li>CMOS 元件行為建模與物理設計限制</li>
-          <li>基本邏輯閘與組合電路設計</li>
-          <li>資料通路與子系統設計（加法器、乘法器等）</li>
-          <li>低功耗、可測試性與時脈偏移等進階設計方法</li>
-        </ul>
-    
-        <!-- 展開按鈕 -->
-        <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
-          data-bs-toggle="collapse" data-bs-target="#vlsiDetails" aria-expanded="false"
-          aria-controls="vlsiDetails">
-          按我了解更多
-        </button>
-    
-        <!-- 展開內容 -->
-        <div class="collapse" id="vlsiDetails">
-          <p>
-            本課程從 MOS 元件與製程行為出發，逐步學習邏輯電路、資料通路與子系統等層級的設計技巧，並熟悉 VLSI 設計流程中的各項 CAD 工具與實作要點。課堂中也深入討論 DFT（Design-for-Testability）與低功耗（Low-Power）等設計議題。
-          </p>
-          <p>
-            課堂中搭配 SPICE 模擬與版圖實作練習，實際設計邏輯閘陣列與儲存模組，涵蓋 Fully-custom 與 Cell-based 設計風格，並考量現代製程中所面臨的時脈偏移、互連效應與封裝限制等議題。
-          </p>
-          <p>
-            This course introduces junior EE students to system-level VLSI design using industry-relevant CAD tools. From transistor-level modeling to full data path architecture, students acquire practical skills in design methodology, testability, low-power strategies, and layout optimization.
-          </p>
-          <p>
-            Students perform SPICE simulations and complete layout design assignments, gaining experience with both fully-custom and standard cell-based approaches. Topics such as skew-aware design, packaging, and FinFET technology are also covered to reflect current VLSI industry trends.
-          </p>
-    
-          <!-- 📂 課程成果區 -->
-          <h5 class="mt-4">📂 課程成果與作業</h5>
-          <ul>
-            <li>
-              <a href="VLSI/HW1_Layout_SPICE.pdf" target="_blank">Lab 1 – CMOS SPICE 模擬與反應時間觀察</a>
-              <div class="ms-3 text-muted">使用 SPICE 模擬器觀察 CMOS 反應時間與功耗變化，練習模型驗證與電路特性分析。</div>
-            </li>
-            <li>
-              <a href="VLSI/HW2_LogicGate_Layout.pdf" target="_blank">Lab 2 – 標準元件與全客製邏輯閘版圖設計</a>
-              <div class="ms-3 text-muted">實作 NAND、XOR 等邏輯閘版圖，完成完整布局、互連並驗證 DRC/LVS。</div>
-            </li>
+  
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">微算機原理與實驗</h3>
+          <h3 class="mb-0">Principle of Microcomputer</h3>
+          <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
+          <ul class="list-unstyled ms-3">
+            <li><strong>Dept. of course offering:</strong> Department of Electrical and Computer Engineering</li>
+            <li><strong>Required/Elective:</strong> Elective</li>
+            <li><strong>Instructor:</strong> 王宜楷</li>
           </ul>
-    
-          <!-- 收起按鈕 -->
-          <div class="mt-3">
-            <button class="btn btn-outline-secondary btn-sm" type="button"
-              data-bs-toggle="collapse" data-bs-target="#vlsiDetails" aria-expanded="true"
-              aria-controls="vlsiDetails">
-              收起內容
-            </button>
+  
+          <!-- 簡短介紹 -->
+          <p>
+            本課程介紹 8051 微控制器架構與應用，涵蓋組合語言、I/O 操作、中斷、計時器、串列通訊等主題，透過理論與實驗課程並重，培養設計與除錯微控制系統的實作能力。<br>
+            This course introduces the architecture and applications of the 8051 microcontroller, covering assembly language, I/O operations, interrupts, timers, and serial communication. Through combined lectures and hands-on labs, students gain practical skills in designing and debugging microcontroller systems.
+          </p>
+  
+          <!-- 展開按鈕 -->
+          <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
+            data-bs-toggle="collapse" data-bs-target="#microcomputerDetails" aria-expanded="false"
+            aria-controls="microcomputerDetails">
+            按我了解更多
+          </button>
+  
+          <!-- 展開內容 -->
+          <div class="collapse" id="microcomputerDetails">
+            <p>
+              本課程兼具理論講授與作業實作，內容涵蓋：
+            </p>
+            <ul>
+              <li>8051 單晶片微控器介紹與軟體模擬器、ICE 開發環境實作</li>
+              <li>指令集與組合語言實作</li>
+              <li>I/O 操作與數位輸入輸出控制</li>
+              <li>Timer/Counter 計時與週期性觸發控制</li>
+              <li>外部中斷與定時中斷處理</li>
+              <li>串列傳輸 UART 程式設計與應用</li>
+              <li>微電腦系統與嵌入式應用概念整合</li>
+            </ul>
+            <p>
+              This lab-based course covers both theoretical concepts and practical implementation of microcontroller systems, enabling students to develop low-level programs in assembly and C, interface with hardware, and analyze timing and interrupt behavior in real time.
+            </p>
+  
+            <h5 class="mt-4">📂 課程資料與成果</h5>
+            <ul>
+  
+              <li>
+                <a href="Principle_of_Microcomputer/Lab1結報.pdf" target="_blank">Lab 1 - LED 跑馬燈與霹靂燈效果</a>
+                <div class="ms-3 text-muted">使用 8051 組合語言撰寫 LED 跑馬燈與霹靂燈程式，學習基本 I/O 控制與延遲函數。<br>Implemented LED chasing and blinking effects using 8051 assembly to learn basic I/O control and delay routines.</div>
+              </li>
+  
+              <li>
+                <a href="Principle_of_Microcomputer/Lab2報告.pdf" target="_blank">Lab 2 - 使用指撥開關控制 LED 與跑馬燈</a>
+                <div class="ms-3 text-muted">透過指撥開關輸入控制 LED 顯示與跑馬燈效果，加強 I/O 控制與 delay 時間調整概念。<br>Used DIP switches to control LED outputs and implement a running light pattern, reinforcing I/O and delay control concepts.</div>
+              </li>
+  
+              <li>
+                <a href="Principle_of_Microcomputer/Lab3報告.pdf" target="_blank">Lab 3 - 七段顯示器顯示數字與字母</a>
+                <div class="ms-3 text-muted">練習共陽極七段顯示器的控制，顯示 0~9 及 A~F 字元，並使用 TABLE 儲存顯示資料。<br>Practiced controlling common-anode 7-segment displays to show digits and letters using lookup TABLE.</div>
+              </li>
+  
+              <li>
+                <a href="Principle_of_Microcomputer/Lab4報告.pdf" target="_blank">Lab 4 - 四合一七段顯示器計數器設計</a>
+                <div class="ms-3 text-muted">實作四合一共陽極七段顯示器的倒數計時器，學習多位元輪流顯示與亮度一致的技巧。<br>Designed a countdown timer using 4-digit 7-segment display and learned multiplexing techniques for uniform brightness.</div>
+              </li>
+  
+              <li>
+                <a href="Principle_of_Microcomputer/Lab5報告.pdf" target="_blank">Lab 5 - 5x7 點矩陣 LED 動畫與字型切換</a>
+                <div class="ms-3 text-muted">
+                  控制 5x7 點矩陣 LED 顯示器顯示「大」、「中」、「小」等中文字樣，並透過掃描顯示與延遲切換達成動畫效果，理解共陽/共陰驅動方式與視覺暫留原理。<br>
+                  Controlled a 5x7 dot matrix LED to animate Chinese characters like "大", "中", and "小" through scanning and timed switching. Explored circuit-level control using 74LS244 and ULN2004.
+                </div>
+              </li>
+  
+              <li>
+                <a href="Principle_of_Microcomputer/Lab6報告.pdf" target="_blank">Lab 6 - 矩陣鍵盤輸入與七段顯示器結合</a>
+                <div class="ms-3 text-muted">
+                  使用 4x4 鍵盤模組進行掃描輸入，並將按鍵結果顯示於七段顯示器上。實作防彈跳機制並了解鍵盤行列掃描邏輯。<br>
+                  Implemented matrix keypad scanning and showed the key result on a 7-segment display. Practiced debounce handling and row-column input logic.
+                </div>
+              </li>
+  
+              <li>
+                <a href="Principle_of_Microcomputer/Lab7報告.pdf" target="_blank">Lab 7 - 步進馬達控制與小鍵盤輸入</a>
+                <div class="ms-3 text-muted">
+                  控制步進馬達進行順時鐘與逆時鐘旋轉，結合鍵盤輸入選擇不同激磁方式（1相、2相、1-2相），觀察轉矩與穩定性差異。<br>
+                  Controlled a stepper motor with keyboard input to switch between excitation modes (1-phase, 2-phase, 1-2-phase), analyzing torque and stability across methods.
+                </div>
+              </li>
+  
+              <li>
+                <a href="Principle_of_Microcomputer/Lab8報告.pdf" target="_blank">Lab 8 - LCD 顯示與自訂動畫圖形</a>
+                <div class="ms-3 text-muted">
+                  控制字元型 LCD 顯示模組進行文字輸出，進階挑戰使用 CGRAM 實作動畫角色切換效果。<br>
+                  Controlled a character-based LCD module for static display and created animated figures using CGRAM custom characters.
+                </div>
+              </li>
+  
+              <li>
+                <a href="Principle_of_Microcomputer/Lab9-1報告.pdf" target="_blank">Lab 9-1 - 使用 TABLE 控制旋轉 LED 顯示中文字</a>
+                <div class="ms-3 text-muted">以資料表控制旋轉 LED 點陣顯示「別當我」中文字，並解決 DPTR 無法存取大於 256 bytes 資料的問題。<br>Controlled spinning LED display to show Chinese characters using table lookup, addressing DPTR limitations on large tables.</div>
+              </li>
+  
+              <li>
+                <a href="Principle_of_Microcomputer/Lab9-2報告.pdf" target="_blank">Lab 9-2 - 外部中斷與旋轉 LED 顯示控制</a>
+                <div class="ms-3 text-muted">
+                  透過 INT0 中斷偵測旋轉訊號並啟動 LED 字型資料顯示，成功實現「別當我」字樣的穩定捲動動畫。<br>
+                  Used INT0 interrupt to synchronize and trigger character display on a rotating LED system, enabling animated scrolling of Chinese characters.
+                </div>
+              </li>
+  
+              <li>
+                <a href="Principle_of_Microcomputer/Lab10報告.pdf" target="_blank">
+                  Lab 10 – 超音波測距系統設計
+                </a>
+                <div class="ms-3 text-muted">整合 Timer0 與 Counter1 完成超音波距離量測與七段顯示輸出。</div>
+                <div class="ms-3 text-muted">Use Timer0 and Counter1 to measure distance with ultrasonic sensor and display on 7-seg.</div>
+              </li>
+  
+              <li>
+                <a href="Principle_of_Microcomputer/Lab11報告.pdf" target="_blank">Lab 11 – 鍵盤音符控制與蜂鳴器旋律播放</a>
+                <div class="ms-3 text-muted">
+                  使用矩陣鍵盤輸入控制蜂鳴器播放 Do~Si 音符，進階挑戰以查表方式實作完整旋律如「小蜜蜂」。<br>
+                  Controlled buzzer tones via keypad input (Do to Si), with advanced support for melody playback using lookup tables and Timer0 PWM control.
+                </div>
+              </li>
+  
+              <li>
+                <a href="Principle_of_Microcomputer/Lab12結報.pdf" target="_blank">Lab 12 – 串列通訊互動式顯示與音效系統</a>
+                <div class="ms-3 text-muted">
+                  透過電腦與 8051 串列埠傳送文字指令，控制七段顯示器顯示內容並同步播放對應旋律，整合視覺與聲音的互動回應。<br>
+                  Communicated with 8051 via serial port to display messages on 7-segment displays and play melodies in response, creating a synchronized visual-audio feedback system.
+                </div>
+              </li>
+  
+              <li>
+                <a href="Principle_of_Microcomputer/Final報告.pdf" target="_blank">
+                  Final Project – 音樂播放器系統設計
+                </a>
+                <div class="ms-3 text-muted">以 8051 為核心實作可選曲、顯示與播放功能的嵌入式音樂播放器。</div>
+                <div class="ms-3 text-muted">An embedded music player with song selection, display, and playback features built on 8051.</div>
+              </li>  
+            </ul>
+  
+  
+            <!-- 收起按鈕 -->
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" type="button"
+                data-bs-toggle="collapse" data-bs-target="#microcomputerDetails" aria-expanded="true"
+                aria-controls="microcomputerDetails">
+                收起內容
+              </button>
+            </div>
           </div>
         </div>
+        <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
       </div>
-      <div class="flex-shrink-0"><span class="text-primary">2024 年秋季學期</span></div>
+  
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">演算法導論</h3>
+          <h3 class="mb-0">Introduction to Algorithms</h3>
+          <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
+          <ul class="list-unstyled ms-3">
+            <li><strong>Dept. of course offering:</strong> Department of Electrical and Computer Engineering</li>
+            <li><strong>Required/Elective:</strong> Required</li>
+            <li><strong>Instructor:</strong> 余俊宏</li>
+          </ul>
+      
+          <!-- 簡短介紹 -->
+          <p>
+            本課程系統性介紹設計與分析演算法的方法，涵蓋排序、遞迴、動態規劃、圖論演算法與資料結構等，強調時間與空間複雜度的推導技巧與實作能力。<br>
+            This course systematically introduces methods for designing and analyzing algorithms, covering sorting, recursion, dynamic programming, graph algorithms, and data structures. Emphasis is placed on analyzing time/space complexity and practical implementation.
+          </p>
+      
+          <!-- 展開按鈕 -->
+          <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
+            data-bs-toggle="collapse" data-bs-target="#algoDetails" aria-expanded="false"
+            aria-controls="algoDetails">
+            按我了解更多
+          </button>
+      
+          <!-- 展開區塊 -->
+          <div class="collapse" id="algoDetails">
+            <p>
+              本課程為講授課程，並搭配作業實作內容，涵蓋：
+            </p>
+            <ul>
+              <li>基本排序：Insertion Sort、Growth of Functions</li>
+              <li>遞迴與分治法：Divide and Conquer、Strassen's Algorithm、Recurrences</li>
+              <li>資料結構：Heaps、BST、Hash Tables、Disjoint Sets</li>
+              <li>動態規劃：經典範例與表格法設計</li>
+              <li>圖論演算法：BFS/DFS、Topological Sort、Flow Network、MST、Shortest Paths</li>
+              <li>演算法分析技巧：漸進符號、遞迴式、計算複雜度</li>
+            </ul>
+            <p>
+              Weekly lectures cover both algorithm design principles and mathematical analysis. Topics include insertion sort, divide and conquer, dynamic programming, data structures (heaps, BSTs, disjoint sets), and classical graph algorithms such as shortest paths and max-flow.
+            </p>
+      
+            <!-- 📂 作業區保留 -->
+            <h5 class="mt-4">📂 課程作業與成果</h5>
+            <ul>
+              <li>
+                <a href="Intro_to_Algorithms/HW1.pdf" target="_blank">Homework 1 - Insertion Sort & Complexity Analysis</a>
+                <div class="ms-3 text-muted">分析插入排序時間複雜度與簡單迴圈計數。<br>Analyzed time complexity and iteration behavior of insertion sort.</div>
+              </li>
+              <li>
+                <a href="Intro_to_Algorithms/HW2.pdf" target="_blank">Homework 2 - Divide and Conquer</a>
+                <div class="ms-3 text-muted">實作合併排序與遞迴式分析。<br>Implemented merge sort and solved recurrence relations.</div>
+              </li>
+              <li>
+                <a href="Intro_to_Algorithms/HW3.pdf" target="_blank">Homework 3 - Heaps and Priority Queues</a>
+                <div class="ms-3 text-muted">練習 Heap 操作與應用在排序與排程問題。<br>Practiced heap operations and applications in sorting/scheduling.</div>
+              </li>
+              <li>
+                <a href="Intro_to_Algorithms/HW4.pdf" target="_blank">Homework 4 - Dynamic Programming I</a>
+                <div class="ms-3 text-muted">背包問題與最長共同子序列 (LCS)。<br>Solving problems like 0/1 Knapsack and LCS with DP.</div>
+              </li>
+              <li>
+                <a href="Intro_to_Algorithms/HW5.pdf" target="_blank">Homework 5 - Dynamic Programming II</a>
+                <div class="ms-3 text-muted">切割問題、區間 DP 與記憶化遞迴。<br>Matrix chain multiplication, interval DP and memoization.</div>
+              </li>
+              <li>
+                <a href="Intro_to_Algorithms/HW6.pdf" target="_blank">Homework 6 - Graph Traversal and Topo Sort</a>
+                <div class="ms-3 text-muted">DFS、BFS 與拓撲排序應用。<br>Depth-first/breadth-first search and topological sort practice.</div>
+              </li>
+              <li>
+                <a href="Intro_to_Algorithms/HW7.pdf" target="_blank">Homework 7 - Max Flow and Matching</a>
+                <div class="ms-3 text-muted">Ford-Fulkerson 演算法與二分圖最大匹配。<br>Ford-Fulkerson algorithm and bipartite matching problem.</div>
+              </li>
+              <li>
+                <a href="Intro_to_Algorithms/HW8.pdf" target="_blank">Homework 8 - MST and Shortest Path</a>
+                <div class="ms-3 text-muted">Prim、Kruskal、Dijkstra、Bellman-Ford。<br>Implementing MST and shortest path algorithms.</div>
+              </li>
+            </ul>
+      
+            <!-- 收起按鈕 -->
+            <div class="mt-4">
+              <button class="btn btn-outline-secondary btn-sm" type="button"
+                data-bs-toggle="collapse" data-bs-target="#algoDetails" aria-expanded="true"
+                aria-controls="algoDetails">
+                收起內容
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
+      </div>
+  
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">超大型積體電路設計導論</h3>
+          <h3 class="mb-0">Introduction to VLSI Design</h3>
+          <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
+          <ul class="list-unstyled ms-3">
+            <li><strong>Dept. of course offering:</strong> Department of Electrical and Computer Engineering</li>
+            <li><strong>Required/Elective:</strong> Elective</li>
+            <li><strong>Instructor:</strong> 李鎮宜</li>
+          </ul>
+      
+          <p>本課程為講授課程，並搭配實作內容，內容涵蓋：</p>
+          <ul>
+            <li>CMOS 元件行為建模與物理設計限制</li>
+            <li>基本邏輯閘與組合電路設計</li>
+            <li>資料通路與子系統設計（加法器、乘法器等）</li>
+            <li>低功耗、可測試性與時脈偏移等進階設計方法</li>
+          </ul>
+      
+          <!-- 展開按鈕 -->
+          <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
+            data-bs-toggle="collapse" data-bs-target="#vlsiDetails" aria-expanded="false"
+            aria-controls="vlsiDetails">
+            按我了解更多
+          </button>
+      
+          <!-- 展開內容 -->
+          <div class="collapse" id="vlsiDetails">
+            <p>
+              本課程從 MOS 元件與製程行為出發，逐步學習邏輯電路、資料通路與子系統等層級的設計技巧，並熟悉 VLSI 設計流程中的各項 CAD 工具與實作要點。課堂中也深入討論 DFT（Design-for-Testability）與低功耗（Low-Power）等設計議題。
+            </p>
+            <p>
+              課堂中搭配 SPICE 模擬與版圖實作練習，實際設計邏輯閘陣列與儲存模組，涵蓋 Fully-custom 與 Cell-based 設計風格，並考量現代製程中所面臨的時脈偏移、互連效應與封裝限制等議題。
+            </p>
+            <p>
+              This course introduces junior EE students to system-level VLSI design using industry-relevant CAD tools. From transistor-level modeling to full data path architecture, students acquire practical skills in design methodology, testability, low-power strategies, and layout optimization.
+            </p>
+            <p>
+              Students perform SPICE simulations and complete layout design assignments, gaining experience with both fully-custom and standard cell-based approaches. Topics such as skew-aware design, packaging, and FinFET technology are also covered to reflect current VLSI industry trends.
+            </p>
+      
+            <!-- 📂 課程成果區 -->
+            <h5 class="mt-4">📂 課程成果與作業</h5>
+            <ul>
+              <li>
+                <a href="VLSI/HW1_Layout_SPICE.pdf" target="_blank">Lab 1 – CMOS SPICE 模擬與反應時間觀察</a>
+                <div class="ms-3 text-muted">使用 SPICE 模擬器觀察 CMOS 反應時間與功耗變化，練習模型驗證與電路特性分析。</div>
+              </li>
+              <li>
+                <a href="VLSI/HW2_LogicGate_Layout.pdf" target="_blank">Lab 2 – 標準元件與全客製邏輯閘版圖設計</a>
+                <div class="ms-3 text-muted">實作 NAND、XOR 等邏輯閘版圖，完成完整布局、互連並驗證 DRC/LVS。</div>
+              </li>
+            </ul>
+      
+            <!-- 收起按鈕 -->
+            <div class="mt-3">
+              <button class="btn btn-outline-secondary btn-sm" type="button"
+                data-bs-toggle="collapse" data-bs-target="#vlsiDetails" aria-expanded="true"
+                aria-controls="vlsiDetails">
+                收起內容
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-0"><span class="text-primary">2024 年秋季學期</span></div>
+      </div>
+
+      <!-- ✅ 最後加收起按鈕 -->
+      <div class="mt-2">
+        <button class="btn btn-outline-secondary btn-sm" type="button"
+          data-bs-toggle="collapse" data-bs-target="#electiveCoursesCollapse"
+          aria-expanded="true" aria-controls="electiveCoursesCollapse">
+          收起選修課程
+        </button>
+      </div>
     </div>
-
-
+  
 
     <h4 class="mt-4 mb-2" id="general-courses">[通識]</h4>
-    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-      <div class="flex-grow-1">
-        <h3 class="mb-0">程式設計 Go Go Go</h3>
-        <h3 class="mb-0">Programming Go Go Go</h3>
-        <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
-        <ul class="list-unstyled ms-3">
-          <li><strong>Dept. of course offering:</strong> Department of Biological Science and Technology</li>
-          <li><strong>Required/Elective:</strong> Core curriculum</li>
-          <li><strong>Instructor:</strong> 羅惟正</li>
-        </ul>
-    
-        <p>
-          本課程為講授課程，並搭配實作內容，內容涵蓋：
-        </p>
-        <ul>
-          <li>程式設計核心能力：條件運算、邏輯封裝與模組設計</li>
-          <li>常用技巧：配對表思維、檔案處理、作業系統互動、外部程式呼叫</li>
-          <li>進階能力：大數據分析、平行運算</li>
-          <li>通用能力：變數操作、磁碟管理、陣列與迴圈等語法基本功</li>
-        </ul>
-    
-        <!-- 展開按鈕 -->
-        <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
-          data-bs-toggle="collapse" data-bs-target="#gogogoDetails" aria-expanded="false"
-          aria-controls="gogogoDetails">
-          按我了解更多
-        </button>
-    
-        <!-- 展開內容 -->
-        <div class="collapse" id="gogogoDetails">
-          <p>
-            這門課以 Google 開發的 Go 語言為主軸，進行跨層級的程式設計訓練。Go 為編譯式語言，擁有高效能的平行與分散運算能力，在人工智慧、大數據、雲端平台等應用場景中展現極大優勢。
-          </p>
-          <p>
-            本課程從語法結構與基礎邏輯出發，逐步引導學生進行模組化程式撰寫，並涵蓋作業系統層級的程式設計技巧，如檔案控制與外部程式呼叫，讓學生建立具備實用性與系統觀的程式思維。
-          </p>
-          <p>
-            課程理念著眼於資訊教育的普及與跨領域能力的培養，目標是培育能掌握數位工具、並能應用程式語言於生醫、社會、人文等不同背景的兩棲型人才。課程強調「看得懂程式、能與資訊科技對話」是新世代不可或缺的能力。
-          </p>
-          <p>
-            This course introduces the Go programming language developed by Google, focusing on both fundamental and advanced programming skills. As a compiled and concurrency-optimized language, Go is ideal for big data analysis, distributed systems, and high-performance applications.
-          </p>
-          <p>
-            Students learn to structure modular programs, interact with operating systems, and perform tasks such as file manipulation and subprocess invocation. The course emphasizes logical thinking and systems-level awareness, empowering students to write clean, efficient, and scalable code.
-          </p>
-          <p>
-            With a vision of fostering cross-disciplinary digital fluency, the course encourages learners from diverse fields to become proficient in code literacy, helping to bridge communication gaps across disciplines and prepare for the data-driven future.
-          </p>
-        
-          <!-- 📂 作業成果區 -->
-          <h5 class="mt-4">📂 課程作業與成果</h5>
-          <ul>
-            <li><a href="GoGoGo/HW1.pdf" target="_blank">HW1 - 變數與邏輯運算 Variable & Logic</a><div class="ms-3 text-muted">練習變數宣告、條件判斷與邏輯運算。</div></li>
-            <li><a href="GoGoGo/HW2.pdf" target="_blank">HW2 - 陣列與迴圈 Arrays & Loops</a><div class="ms-3 text-muted">實作陣列結構與 for/while 迴圈控制。</div></li>
-            <li><a href="GoGoGo/HW3.pdf" target="_blank">HW3 - 函式與模組 Functions & Modules</a><div class="ms-3 text-muted">撰寫自訂函式與模組化設計。</div></li>
-            <li><a href="GoGoGo/HW4.pdf" target="_blank">HW4 - 字串與格式化 String Handling</a><div class="ms-3 text-muted">操作字串、輸出格式化與資料轉型。</div></li>
-            <li><a href="GoGoGo/HW5.pdf" target="_blank">HW5 - 檔案操作與路徑 File I/O</a><div class="ms-3 text-muted">學習開啟、讀寫檔案與目錄管理。</div></li>
-            <li><a href="GoGoGo/HW6.pdf" target="_blank">HW6 - 使用者輸入與錯誤處理 Input & Error</a><div class="ms-3 text-muted">處理終端輸入、例外處理與型別驗證。</div></li>
-            <li><a href="GoGoGo/HW7.pdf" target="_blank">HW7 - Struct 與資料封裝 Structs</a><div class="ms-3 text-muted">學習結構體與封裝自訂資料型態。</div></li>
-            <li><a href="GoGoGo/HW8.pdf" target="_blank">HW8 - 指標與記憶體管理 Pointers</a><div class="ms-3 text-muted">理解 Go 語言的記憶體模型與指標操作。</div></li>
-            <li><a href="GoGoGo/HW9.pdf" target="_blank">HW9 - 並行處理與 goroutine Concurrency</a><div class="ms-3 text-muted">使用 goroutine 與 channel 實作簡易並行處理。</div></li>
-            <li><a href="GoGoGo/HW10.pdf" target="_blank">HW10 - 多執行緒應用與 channel</a><div class="ms-3 text-muted">結合多通道與同步控制的實作練習。</div></li>
-            <li><a href="GoGoGo/HW11.pdf" target="_blank">HW11 - 外部程式呼叫與作業系統互動</a><div class="ms-3 text-muted">操作 OS 指令、調用外部程式與路徑控制。</div></li>
-            <li><a href="GoGoGo/HW12.pdf" target="_blank">HW12 - 資料分析實作 Basic Data Analysis</a><div class="ms-3 text-muted">使用 Go 處理基本統計與資料分類。</div></li>
-            <li><a href="GoGoGo/HW13.pdf" target="_blank">HW13 - 小型資料庫應用與查詢</a><div class="ms-3 text-muted">模擬 key-value 資料庫系統，實作查詢功能。</div></li>
-            <li><a href="GoGoGo/HW14.pdf" target="_blank">HW14 - 平行計算整合專題 Final Project</a><div class="ms-3 text-muted">整合平行運算與模組應用，完成實務專題。</div></li>
+    <!-- 展開按鈕 -->
+    <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
+      data-bs-toggle="collapse" data-bs-target="#generalCoursesCollapse"
+      aria-expanded="false" aria-controls="generalCoursesCollapse">
+      查看通識課程
+    </button>
+
+    <!-- collapse 區塊：包住所有通識課 -->
+    <div class="collapse" id="generalCoursesCollapse">
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">程式設計 Go Go Go</h3>
+          <h3 class="mb-0">Programming Go Go Go</h3>
+          <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
+          <ul class="list-unstyled ms-3">
+            <li><strong>Dept. of course offering:</strong> Department of Biological Science and Technology</li>
+            <li><strong>Required/Elective:</strong> Core curriculum</li>
+            <li><strong>Instructor:</strong> 羅惟正</li>
           </ul>
-    
-          <!-- 收起按鈕 -->
-          <div class="mt-3">
-            <button class="btn btn-outline-secondary btn-sm" type="button"
-              data-bs-toggle="collapse" data-bs-target="#gogogoDetails" aria-expanded="true"
-              aria-controls="gogogoDetails">
-              收起內容
-            </button>
+      
+          <p>
+            本課程為講授課程，並搭配實作內容，內容涵蓋：
+          </p>
+          <ul>
+            <li>程式設計核心能力：條件運算、邏輯封裝與模組設計</li>
+            <li>常用技巧：配對表思維、檔案處理、作業系統互動、外部程式呼叫</li>
+            <li>進階能力：大數據分析、平行運算</li>
+            <li>通用能力：變數操作、磁碟管理、陣列與迴圈等語法基本功</li>
+          </ul>
+      
+          <!-- 展開按鈕 -->
+          <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
+            data-bs-toggle="collapse" data-bs-target="#gogogoDetails" aria-expanded="false"
+            aria-controls="gogogoDetails">
+            按我了解更多
+          </button>
+      
+          <!-- 展開內容 -->
+          <div class="collapse" id="gogogoDetails">
+            <p>
+              這門課以 Google 開發的 Go 語言為主軸，進行跨層級的程式設計訓練。Go 為編譯式語言，擁有高效能的平行與分散運算能力，在人工智慧、大數據、雲端平台等應用場景中展現極大優勢。
+            </p>
+            <p>
+              本課程從語法結構與基礎邏輯出發，逐步引導學生進行模組化程式撰寫，並涵蓋作業系統層級的程式設計技巧，如檔案控制與外部程式呼叫，讓學生建立具備實用性與系統觀的程式思維。
+            </p>
+            <p>
+              課程理念著眼於資訊教育的普及與跨領域能力的培養，目標是培育能掌握數位工具、並能應用程式語言於生醫、社會、人文等不同背景的兩棲型人才。課程強調「看得懂程式、能與資訊科技對話」是新世代不可或缺的能力。
+            </p>
+            <p>
+              This course introduces the Go programming language developed by Google, focusing on both fundamental and advanced programming skills. As a compiled and concurrency-optimized language, Go is ideal for big data analysis, distributed systems, and high-performance applications.
+            </p>
+            <p>
+              Students learn to structure modular programs, interact with operating systems, and perform tasks such as file manipulation and subprocess invocation. The course emphasizes logical thinking and systems-level awareness, empowering students to write clean, efficient, and scalable code.
+            </p>
+            <p>
+              With a vision of fostering cross-disciplinary digital fluency, the course encourages learners from diverse fields to become proficient in code literacy, helping to bridge communication gaps across disciplines and prepare for the data-driven future.
+            </p>
+          
+            <!-- 📂 作業成果區 -->
+            <h5 class="mt-4">📂 課程作業與成果</h5>
+            <ul>
+              <li><a href="GoGoGo/HW1.pdf" target="_blank">HW1 - 變數與邏輯運算 Variable & Logic</a><div class="ms-3 text-muted">練習變數宣告、條件判斷與邏輯運算。</div></li>
+              <li><a href="GoGoGo/HW2.pdf" target="_blank">HW2 - 陣列與迴圈 Arrays & Loops</a><div class="ms-3 text-muted">實作陣列結構與 for/while 迴圈控制。</div></li>
+              <li><a href="GoGoGo/HW3.pdf" target="_blank">HW3 - 函式與模組 Functions & Modules</a><div class="ms-3 text-muted">撰寫自訂函式與模組化設計。</div></li>
+              <li><a href="GoGoGo/HW4.pdf" target="_blank">HW4 - 字串與格式化 String Handling</a><div class="ms-3 text-muted">操作字串、輸出格式化與資料轉型。</div></li>
+              <li><a href="GoGoGo/HW5.pdf" target="_blank">HW5 - 檔案操作與路徑 File I/O</a><div class="ms-3 text-muted">學習開啟、讀寫檔案與目錄管理。</div></li>
+              <li><a href="GoGoGo/HW6.pdf" target="_blank">HW6 - 使用者輸入與錯誤處理 Input & Error</a><div class="ms-3 text-muted">處理終端輸入、例外處理與型別驗證。</div></li>
+              <li><a href="GoGoGo/HW7.pdf" target="_blank">HW7 - Struct 與資料封裝 Structs</a><div class="ms-3 text-muted">學習結構體與封裝自訂資料型態。</div></li>
+              <li><a href="GoGoGo/HW8.pdf" target="_blank">HW8 - 指標與記憶體管理 Pointers</a><div class="ms-3 text-muted">理解 Go 語言的記憶體模型與指標操作。</div></li>
+              <li><a href="GoGoGo/HW9.pdf" target="_blank">HW9 - 並行處理與 goroutine Concurrency</a><div class="ms-3 text-muted">使用 goroutine 與 channel 實作簡易並行處理。</div></li>
+              <li><a href="GoGoGo/HW10.pdf" target="_blank">HW10 - 多執行緒應用與 channel</a><div class="ms-3 text-muted">結合多通道與同步控制的實作練習。</div></li>
+              <li><a href="GoGoGo/HW11.pdf" target="_blank">HW11 - 外部程式呼叫與作業系統互動</a><div class="ms-3 text-muted">操作 OS 指令、調用外部程式與路徑控制。</div></li>
+              <li><a href="GoGoGo/HW12.pdf" target="_blank">HW12 - 資料分析實作 Basic Data Analysis</a><div class="ms-3 text-muted">使用 Go 處理基本統計與資料分類。</div></li>
+              <li><a href="GoGoGo/HW13.pdf" target="_blank">HW13 - 小型資料庫應用與查詢</a><div class="ms-3 text-muted">模擬 key-value 資料庫系統，實作查詢功能。</div></li>
+              <li><a href="GoGoGo/HW14.pdf" target="_blank">HW14 - 平行計算整合專題 Final Project</a><div class="ms-3 text-muted">整合平行運算與模組應用，完成實務專題。</div></li>
+            </ul>
+      
+            <!-- 收起按鈕 -->
+            <div class="mt-3">
+              <button class="btn btn-outline-secondary btn-sm" type="button"
+                data-bs-toggle="collapse" data-bs-target="#gogogoDetails" aria-expanded="true"
+                aria-controls="gogogoDetails">
+                收起內容
+              </button>
+            </div>
           </div>
         </div>
+        <div class="flex-shrink-0"><span class="text-primary">2024 年秋季學期</span></div>
       </div>
-      <div class="flex-shrink-0"><span class="text-primary">2024 年秋季學期</span></div>
-    </div>
 
+      <!-- ✅ 最後加收起按鈕 -->
+      <div class="mt-2">
+        <button class="btn btn-outline-secondary btn-sm" type="button"
+          data-bs-toggle="collapse" data-bs-target="#generalCoursesCollapse"
+          aria-expanded="true" aria-controls="generalCoursesCollapse">
+          收起通識課程
+        </button>
+      </div>
+    </div>
 
     <h3 class="mt-5 mb-3" id="experience-offcampus">校外經歷</h3>
     <p class="ms-3 text-muted">（未填寫）</p>
