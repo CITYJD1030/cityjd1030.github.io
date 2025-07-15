@@ -102,18 +102,18 @@
         </button>
     
         <!-- 展開區塊 -->
-        <p>
-          本課程為講授課程，並搭配實作內容，涵蓋：
-        </p>
-        <ul>
-          <li>線性時不變系統（LTI Systems）</li>
-          <li>傅立葉級數與傅立葉轉換</li>
-          <li>訊號與系統的時域與頻域特性</li>
-          <li>取樣理論與失真分析</li>
-          <li>拉氏轉換與 Z 轉換</li>
-          <li>訊號處理與通訊系統中的應用案例</li>
-        </ul>
         <div class="collapse" id="signalsDetails">
+          <p>
+            本課程為講授課程，並搭配實作內容，涵蓋：
+          </p>
+          <ul>
+            <li>線性時不變系統（LTI Systems）</li>
+            <li>傅立葉級數與傅立葉轉換</li>
+            <li>訊號與系統的時域與頻域特性</li>
+            <li>取樣理論與失真分析</li>
+            <li>拉氏轉換與 Z 轉換</li>
+            <li>訊號處理與通訊系統中的應用案例</li>
+          </ul>
           <p>
             在這門課中，我系統性學習了連續與離散時間訊號與系統的數學建模與分析方法。課程以線性時不變系統（LTI）為核心，探討系統的穩定性、可解性與響應行為，並透過傅立葉級數與傅立葉轉換分析週期與非週期訊號的頻率組成。
           </p>
@@ -623,6 +623,74 @@
       </div>
       <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
     </div>
+
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+      <div class="flex-grow-1">
+        <h3 class="mb-0">超大型積體電路設計導論</h3>
+        <h3 class="mb-0">Introduction to VLSI Design</h3>
+        <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
+        <ul class="list-unstyled ms-3">
+          <li><strong>Dept. of course offering:</strong> Department of Electrical and Computer Engineering</li>
+          <li><strong>Required/Elective:</strong> Elective</li>
+          <li><strong>Instructor:</strong> 李鎮宜</li>
+        </ul>
+    
+        <p>本課程為講授課程，並搭配實作內容，內容涵蓋：</p>
+        <ul>
+          <li>CMOS 元件行為建模與物理設計限制</li>
+          <li>基本邏輯閘與組合電路設計</li>
+          <li>資料通路與子系統設計（加法器、乘法器等）</li>
+          <li>低功耗、可測試性與時脈偏移等進階設計方法</li>
+        </ul>
+    
+        <!-- 展開按鈕 -->
+        <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
+          data-bs-toggle="collapse" data-bs-target="#vlsiDetails" aria-expanded="false"
+          aria-controls="vlsiDetails">
+          按我了解更多
+        </button>
+    
+        <!-- 展開內容 -->
+        <div class="collapse" id="vlsiDetails">
+          <p>
+            本課程引導學生從 MOS 元件與製程行為出發，逐步學習邏輯電路、資料通路與子系統等層級的設計技巧，並熟悉 VLSI 設計流程中的各項 CAD 工具與實作要點。課堂中也深入討論 DFT（Design-for-Testability）與低功耗（Low-Power）等設計議題。
+          </p>
+          <p>
+            課堂中搭配 SPICE 模擬與版圖實作練習，實際設計邏輯閘陣列與儲存模組，涵蓋 Fully-custom 與 Cell-based 設計風格，並考量現代製程中所面臨的時脈偏移、互連效應與封裝限制等議題。
+          </p>
+          <p>
+            This course introduces junior EE students to system-level VLSI design using industry-relevant CAD tools. From transistor-level modeling to full data path architecture, students acquire practical skills in design methodology, testability, low-power strategies, and layout optimization.
+          </p>
+          <p>
+            Students perform SPICE simulations and complete layout design assignments, gaining experience with both fully-custom and standard cell-based approaches. Topics such as skew-aware design, packaging, and FinFET technology are also covered to reflect current VLSI industry trends.
+          </p>
+    
+          <!-- 📂 課程成果區 -->
+          <h5 class="mt-4">📂 課程成果與作業</h5>
+          <ul>
+            <li>
+              <a href="VLSI/HW1_Layout_SPICE.pdf" target="_blank">Lab 1 – CMOS SPICE 模擬與反應時間觀察</a>
+              <div class="ms-3 text-muted">使用 SPICE 模擬器觀察 CMOS 反應時間與功耗變化，練習模型驗證與電路特性分析。</div>
+            </li>
+            <li>
+              <a href="VLSI/HW2_LogicGate_Layout.pdf" target="_blank">Lab 2 – 標準元件與全客製邏輯閘版圖設計</a>
+              <div class="ms-3 text-muted">實作 NAND、XOR 等邏輯閘版圖，完成完整布局、互連並驗證 DRC/LVS。</div>
+            </li>
+          </ul>
+    
+          <!-- 收起按鈕 -->
+          <div class="mt-3">
+            <button class="btn btn-outline-secondary btn-sm" type="button"
+              data-bs-toggle="collapse" data-bs-target="#vlsiDetails" aria-expanded="true"
+              aria-controls="vlsiDetails">
+              收起內容
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex-shrink-0"><span class="text-primary">2024 年秋季學期</span></div>
+    </div>
+
 
 
     <h4 class="mt-4 mb-2" id="general-courses">[通識]</h4>
