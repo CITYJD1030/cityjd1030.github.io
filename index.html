@@ -83,63 +83,82 @@
     <h3 class="mb-3" id="experience-campus">校內經歷</h3>
 
     <h4 class="mb-2" id="required-courses">[必修]</h4>
-    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-      <div class="flex-grow-1">
-        <h3 class="mb-0">訊號與系統</h3>
-        <h3 class="mb-0">Signals and Systems</h3>
-        <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
-        <ul class="list-unstyled ms-3">
-          <li><strong>Dept. of course offering:</strong> College of Electrical Engineering</li>
-          <li><strong>Required/Elective:</strong> Required</li>
-          <li><strong>Instructor:</strong> 賴青沂</li>
-        </ul>
+
+    <!-- 展開按鈕 -->
+    <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
+      data-bs-toggle="collapse" data-bs-target="#requiredCoursesCollapse"
+      aria-expanded="false" aria-controls="requiredCoursesCollapse">
+      查看必修課程
+    </button>
+
+    <!-- collapse 區塊：包住所有必修課 -->
+    <div class="collapse" id="requiredCoursesCollapse">
     
-        <!-- 展開按鈕 -->
-        <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
-          data-bs-toggle="collapse" data-bs-target="#signalsDetails" aria-expanded="false"
-          aria-controls="signalsDetails">
-          按我了解更多
-        </button>
-    
-        <!-- 展開區塊 -->
-        <div class="collapse" id="signalsDetails">
-          <p>
-            本課程為講授課程，並搭配實作內容，涵蓋：
-          </p>
-          <ul>
-            <li>線性時不變系統（LTI Systems）</li>
-            <li>傅立葉級數與傅立葉轉換</li>
-            <li>訊號與系統的時域與頻域特性</li>
-            <li>取樣理論與失真分析</li>
-            <li>拉氏轉換與 Z 轉換</li>
-            <li>訊號處理與通訊系統中的應用案例</li>
+      <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">訊號與系統</h3>
+          <h3 class="mb-0">Signals and Systems</h3>
+          <div class="subheading mb-3">National Yang Ming Chiao Tung University</div>
+          <ul class="list-unstyled ms-3">
+            <li><strong>Dept. of course offering:</strong> College of Electrical Engineering</li>
+            <li><strong>Required/Elective:</strong> Required</li>
+            <li><strong>Instructor:</strong> 賴青沂</li>
           </ul>
-          <p>
-            在這門課中，我系統性學習了連續與離散時間訊號與系統的數學建模與分析方法。課程以線性時不變系統（LTI）為核心，探討系統的穩定性、可解性與響應行為，並透過傅立葉級數與傅立葉轉換分析週期與非週期訊號的頻率組成。
-          </p>
-          <p>
-            課程內容亦涵蓋取樣理論、Aliasing 現象與還原條件，進一步延伸至拉氏轉換與 Z 轉換的應用，以處理連續與離散系統的輸入輸出關係與頻域行為。這些數學工具為後續訊號處理、通訊系統設計、控制系統分析與 AI 特徵擷取建立重要基礎。
-          </p>
-          <p>
-            Signals and Systems introduced the mathematical foundations of both continuous-time and discrete-time signal modeling. Through the study of LTI (Linear Time-Invariant) systems, I learned to analyze system stability, impulse response, and system behavior in both time and frequency domains using Fourier series and transforms.
-          </p>
-          <p>
-            The course also covered sampling theory, aliasing effects, and the use of Laplace and Z-transforms to solve differential/difference equations and analyze system responses. These tools are fundamental to advanced courses and applications such as digital signal processing (DSP), communications, control systems, and machine learning models involving frequency-domain representations.
-          </p>
-    
-          <!-- 收起按鈕 -->
-          <div class="mt-3">
-            <button class="btn btn-outline-secondary btn-sm" type="button"
-              data-bs-toggle="collapse" data-bs-target="#signalsDetails" aria-expanded="true"
-              aria-controls="signalsDetails">
-              收起內容
-            </button>
+      
+          <!-- 展開按鈕 -->
+          <button class="btn btn-outline-secondary btn-sm mb-3" type="button"
+            data-bs-toggle="collapse" data-bs-target="#signalsDetails" aria-expanded="false"
+            aria-controls="signalsDetails">
+            按我了解更多
+          </button>
+      
+          <!-- 展開區塊 -->
+          <div class="collapse" id="signalsDetails">
+            <p>
+              本課程為講授課程，並搭配實作內容，涵蓋：
+            </p>
+            <ul>
+              <li>線性時不變系統（LTI Systems）</li>
+              <li>傅立葉級數與傅立葉轉換</li>
+              <li>訊號與系統的時域與頻域特性</li>
+              <li>取樣理論與失真分析</li>
+              <li>拉氏轉換與 Z 轉換</li>
+              <li>訊號處理與通訊系統中的應用案例</li>
+            </ul>
+            <p>
+              在這門課中，我系統性學習了連續與離散時間訊號與系統的數學建模與分析方法。課程以線性時不變系統（LTI）為核心，探討系統的穩定性、可解性與響應行為，並透過傅立葉級數與傅立葉轉換分析週期與非週期訊號的頻率組成。
+            </p>
+            <p>
+              課程內容亦涵蓋取樣理論、Aliasing 現象與還原條件，進一步延伸至拉氏轉換與 Z 轉換的應用，以處理連續與離散系統的輸入輸出關係與頻域行為。這些數學工具為後續訊號處理、通訊系統設計、控制系統分析與 AI 特徵擷取建立重要基礎。
+            </p>
+            <p>
+              Signals and Systems introduced the mathematical foundations of both continuous-time and discrete-time signal modeling. Through the study of LTI (Linear Time-Invariant) systems, I learned to analyze system stability, impulse response, and system behavior in both time and frequency domains using Fourier series and transforms.
+            </p>
+            <p>
+              The course also covered sampling theory, aliasing effects, and the use of Laplace and Z-transforms to solve differential/difference equations and analyze system responses. These tools are fundamental to advanced courses and applications such as digital signal processing (DSP), communications, control systems, and machine learning models involving frequency-domain representations.
+            </p>
+      
+            <!-- 收起按鈕 -->
+            <div class="mt-3">
+              <button class="btn btn-outline-secondary btn-sm" type="button"
+                data-bs-toggle="collapse" data-bs-target="#signalsDetails" aria-expanded="true"
+                aria-controls="signalsDetails">
+                收起內容
+              </button>
+            </div>
           </div>
         </div>
+        <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
       </div>
-      <div class="flex-shrink-0"><span class="text-primary">2025 年春季學期</span></div>
+      <!-- ✅ 最後加收起按鈕 -->
+      <div class="mt-2">
+        <button class="btn btn-outline-secondary btn-sm" type="button"
+          data-bs-toggle="collapse" data-bs-target="#requiredCoursesCollapse"
+          aria-expanded="true" aria-controls="requiredCoursesCollapse">
+          收起必修課程
+        </button>
+      </div>
     </div>
-
 
     <h4 class="mt-4 mb-2" id="elective-courses">[選修]</h4>
     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
